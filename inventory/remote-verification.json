@@ -1,0 +1,86 @@
+[
+  {
+    "name": "denza-assets-01.zip",
+    "bytes": 591940106,
+    "sha256": "b62be1dc3f83898ba179a0c8dc0b1baec6a8d2411fe27d23050361cc20c68269",
+    "remoteDigest": "sha256:b62be1dc3f83898ba179a0c8dc0b1baec6a8d2411fe27d23050361cc20c68269",
+    "state": "uploaded"
+  },
+  {
+    "name": "denza-assets-02.zip",
+    "bytes": 332124973,
+    "sha256": "5aa41cbb723989876aafb47968b79abfc8bbeb81c19ccf8b7233cf54e2403452",
+    "remoteDigest": "sha256:5aa41cbb723989876aafb47968b79abfc8bbeb81c19ccf8b7233cf54e2403452",
+    "state": "uploaded"
+  },
+  {
+    "name": "denza-assets-03.zip",
+    "bytes": 555946479,
+    "sha256": "acd7fd7babc83366634f1f4f471090c3f8b9f784d3ca9feed6ca76de5cd2f2b5",
+    "remoteDigest": "sha256:acd7fd7babc83366634f1f4f471090c3f8b9f784d3ca9feed6ca76de5cd2f2b5",
+    "state": "uploaded"
+  },
+  {
+    "name": "denza-assets-04.zip",
+    "bytes": 596664291,
+    "sha256": "26045aaa3efb742f53878858e5d0d6baaf08153f8efc2ce8f67197c63ab06131",
+    "remoteDigest": "sha256:26045aaa3efb742f53878858e5d0d6baaf08153f8efc2ce8f67197c63ab06131",
+    "state": "uploaded"
+  },
+  {
+    "name": "denza-assets-05.zip",
+    "bytes": 386865695,
+    "sha256": "b2ec3402425d5c137455876409a3492330b951b3b2cae78c0817c34a413fada6",
+    "remoteDigest": "sha256:b2ec3402425d5c137455876409a3492330b951b3b2cae78c0817c34a413fada6",
+    "state": "uploaded"
+  },
+  {
+    "name": "denza-assets-06.zip",
+    "bytes": 383596325,
+    "sha256": "b31c85591ee7b53b6321c1c512c7704ff315a1e956defbb6848c39839158897c",
+    "remoteDigest": "sha256:b31c85591ee7b53b6321c1c512c7704ff315a1e956defbb6848c39839158897c",
+    "state": "uploaded"
+  },
+  {
+    "name": "denza-assets-07.zip",
+    "bytes": 377244245,
+    "sha256": "befc46ca3720a92511ae6a0b9e4d760aeb325e8734b5831f9bf141f1ad67c08d",
+    "remoteDigest": "sha256:befc46ca3720a92511ae6a0b9e4d760aeb325e8734b5831f9bf141f1ad67c08d",
+    "state": "uploaded"
+  },
+  {
+    "name": "denza-assets-08.zip",
+    "bytes": 533425015,
+    "sha256": "f8122b02e022ee78fe0e38b3cb140912c68d416cfddf3b9d77421162dc237320",
+    "remoteDigest": "sha256:f8122b02e022ee78fe0e38b3cb140912c68d416cfddf3b9d77421162dc237320",
+    "state": "uploaded"
+  },
+  {
+    "name": "denza-assets-09.zip",
+    "bytes": 504234453,
+    "sha256": "dfb3e6b9269e819f49b71ce8a9986913f5d8950dd18e35efc43338b272dcced4",
+    "remoteDigest": "sha256:dfb3e6b9269e819f49b71ce8a9986913f5d8950dd18e35efc43338b272dcced4",
+    "state": "uploaded"
+  },
+  {
+    "name": "denza-assets-10.zip",
+    "bytes": 441325220,
+    "sha256": "d2c3c0e45a66cd001f07a73ce49d03a90f81c5e968b6182258470a5c0fc90c42",
+    "remoteDigest": "sha256:d2c3c0e45a66cd001f07a73ce49d03a90f81c5e968b6182258470a5c0fc90c42",
+    "state": "uploaded"
+  },
+  {
+    "name": "denza-assets-11.zip",
+    "bytes": 323087037,
+    "sha256": "f825dc3dee741fce711552206b2c451f624267f9ac3a6e5a43fdfc0ab8c4c752",
+    "remoteDigest": "sha256:f825dc3dee741fce711552206b2c451f624267f9ac3a6e5a43fdfc0ab8c4c752",
+    "state": "uploaded"
+  },
+  {
+    "name": "denza-assets-12.zip",
+    "bytes": 327417823,
+    "sha256": "f55f643abf011e9176c825f46275fe55a6efe0efbc96188169b349d9caefa233",
+    "remoteDigest": "sha256:f55f643abf011e9176c825f46275fe55a6efe0efbc96188169b349d9caefa233",
+    "state": "uploaded"
+  }
+]
