@@ -1,0 +1,20 @@
+{
+  "output": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-web\\out\\strings-web_showcase_30s_4k60.mp4",
+  "frames": 1800,
+  "fps": 60,
+  "seconds": 30,
+  "sourceStartSeconds": 3,
+  "crossfadeFrames": 12,
+  "sources": [
+    "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-web\\out\\01_vortex.mp4",
+    "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-web\\out\\02_growth.mp4",
+    "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-web\\out\\03_pulse.mp4",
+    "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-web\\out\\04_drift.mp4",
+    "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-web\\out\\05_veil.mp4",
+    "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-web\\out\\06_ribbon.mp4",
+    "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-web\\out\\07_dome.mp4",
+    "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-web\\out\\08_canopy.mp4",
+    "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-web\\out\\09_nebula.mp4"
+  ],
+  "elapsedSeconds": 101.84400000000096
+}

@@ -1,0 +1,65 @@
+{
+  "original_sha256": "3b03afad9c960df855d0c4e5fe4e7fa13270da3b59141c6ef5634b78b356bfe4",
+  "archive_toe": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\TD\\3d mapping.toe",
+  "parameter_edits": [
+    {
+      "node": "project1\\mapping_denza\\moviefilein_uv_template.parm",
+      "parameter": "file",
+      "line": "file 0 \"td_assets/uv_template.png\""
+    },
+    {
+      "node": "project1\\mapping_denza\\geo_occluder\\filein_mesh.parm",
+      "parameter": "file",
+      "line": "file 0 \"td_assets/occluder.obj\""
+    },
+    {
+      "node": "project1\\mapping_denza\\geo_wall_L\\filein_mesh.parm",
+      "parameter": "file",
+      "line": "file 0 \"td_assets/wall_L.obj\""
+    },
+    {
+      "node": "project1\\mapping_denza\\geo_wall_R\\filein_mesh.parm",
+      "parameter": "file",
+      "line": "file 0 \"td_assets/wall_R.obj\""
+    },
+    {
+      "node": "project1\\mapping_denza\\sim_preview\\geo_box\\filein_mesh.parm",
+      "parameter": "file",
+      "line": "file 0 \"td_assets/occluder.obj\""
+    },
+    {
+      "node": "project1\\mapping_denza\\sim_preview\\geo_wall_L\\filein_mesh.parm",
+      "parameter": "file",
+      "line": "file 0 \"td_assets/wall_L.obj\""
+    },
+    {
+      "node": "project1\\mapping_denza\\sim_preview\\geo_wall_R\\filein_mesh.parm",
+      "parameter": "file",
+      "line": "file 0 \"td_assets/wall_R.obj\""
+    },
+    {
+      "node": "project1/mapping_denza.parm",
+      "parameter": "Videofile",
+      "line": "Videofile 67108928 \"td_assets/test_pattern_bright.png\""
+    },
+    {
+      "node": "project1/mapping_denza/moviefilein_content.parm",
+      "parameter": "file",
+      "line": "file 17 \"td_assets/test_pattern_bright.png\" parent().par.Videofile"
+    },
+    {
+      "node": "project1/TDMCP.parm",
+      "parameter": "externaltox",
+      "line": "externaltox 0 \"\""
+    }
+  ],
+  "referenced_assets": [
+    "occluder.obj",
+    "test_pattern_bright.png",
+    "uv_template.png",
+    "wall_L.obj",
+    "wall_R.obj"
+  ],
+  "roundtrip_match": true,
+  "runtime_tested": false
+}

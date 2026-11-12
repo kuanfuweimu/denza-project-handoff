@@ -1,0 +1,65 @@
+[
+  {
+    "file": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-web\\out\\strings-web_showcase_30s_4k60_music.mp4",
+    "resolution": [
+      3840,
+      2160
+    ],
+    "fps": "60/1",
+    "frames": "1800",
+    "seconds": "30.000000",
+    "audio": {
+      "codec": "aac",
+      "sampleRate": "48000",
+      "channels": 2,
+      "integratedLUFS": "-16.37",
+      "truePeakDBTP": "-3.04"
+    },
+    "fullDecode": "passed",
+    "sampledMotionFrames": 90,
+    "uniqueMotionFrames": 90,
+    "bytes": 324262326
+  },
+  {
+    "file": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-space\\out\\strings-space_showcase_30s_4k60_reference_v2_music.mp4",
+    "resolution": [
+      3840,
+      2160
+    ],
+    "fps": "60/1",
+    "frames": "1800",
+    "seconds": "30.000000",
+    "audio": {
+      "codec": "aac",
+      "sampleRate": "48000",
+      "channels": 2,
+      "integratedLUFS": "-16.34",
+      "truePeakDBTP": "-1.81"
+    },
+    "fullDecode": "passed",
+    "sampledMotionFrames": 90,
+    "uniqueMotionFrames": 90,
+    "bytes": 383596067
+  },
+  {
+    "file": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-space\\out\\strings-space_showcase_30s_4k60_subject_only_music.mp4",
+    "resolution": [
+      3840,
+      2160
+    ],
+    "fps": "60/1",
+    "frames": "1800",
+    "seconds": "30.000000",
+    "audio": {
+      "codec": "aac",
+      "sampleRate": "48000",
+      "channels": 2,
+      "integratedLUFS": "-16.64",
+      "truePeakDBTP": "-5.24"
+    },
+    "fullDecode": "passed",
+    "sampledMotionFrames": 90,
+    "uniqueMotionFrames": 90,
+    "bytes": 378394898
+  }
+]

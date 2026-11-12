@@ -1,0 +1,9 @@
+{
+  "observedDate": "2026-11-12",
+  "python": "3.12.1",
+  "node": "24.16.0",
+  "ffmpeg": "9.0-full_build-www.gyan.dev",
+  "packages": {"moderngl": "5.13.0", "glcontext": "3.1.0", "numpy": "2.5.4", "Pillow": "13.0.0"},
+  "GPU": "NVIDIA GeForce RTX 4080 Laptop GPU",
+  "note": "Observed installed package dist-info and CLI versions. No application license or Python wheels bundled. TD and SketchUp compatibility must be checked on the destination computer."
+}

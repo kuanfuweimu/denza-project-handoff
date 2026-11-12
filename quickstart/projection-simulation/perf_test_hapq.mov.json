@@ -1,0 +1,55 @@
+{
+  "path": "/project1/mapping_denza",
+  "operators": [
+    {
+      "path": "/project1/mapping_denza/moviefilein_uv_template",
+      "type": "moviefileinTOP",
+      "family": "TOP",
+      "cookTime": 384.5052,
+      "cpuCookTime": 384.5052,
+      "budgetPct": 2307.0
+    },
+    {
+      "path": "/project1/mapping_denza/sim_preview/null_look_target/primitive1",
+      "type": "primitivePOP",
+      "family": "POP",
+      "cookTime": 10.2994,
+      "cpuCookTime": 10.2994,
+      "budgetPct": 61.8
+    },
+    {
+      "path": "/project1/mapping_denza/geo_wall_R/filein_mesh",
+      "type": "fileinSOP",
+      "family": "SOP",
+      "cookTime": 10.0068,
+      "cpuCookTime": 10.0068,
+      "budgetPct": 60.0
+    },
+    {
+      "path": "/project1/mapping_denza/cam_proj_L/file1",
+      "type": "fileinPOP",
+      "family": "POP",
+      "cookTime": 7.1393,
+      "cpuCookTime": 7.1393,
+      "budgetPct": 42.8
+    },
+    {
+      "path": "/project1/mapping_denza/geo_wall_L/filein_mesh",
+      "type": "fileinSOP",
+      "family": "SOP",
+      "cookTime": 6.101,
+      "cpuCookTime": 6.101,
+      "budgetPct": 36.6
+    },
+    {
+      "path": "/project1/mapping_denza/cam_proj_R/file1",
+      "type": "fileinPOP",
+      "family": "POP",
+      "cookTime": 1.2325,
+      "cpuCookTime": 1.2325,
+      "budgetPct": 7.4
+    }
+  ],
+  "count": 6,
+  "sort": "cpu"
+}

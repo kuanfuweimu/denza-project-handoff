@@ -1,0 +1,29 @@
+{
+  "file": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-space\\out\\strings-space_showcase_30s_4k60_20261112.mp4",
+  "frames": 1800,
+  "width": 3840,
+  "height": 2160,
+  "fps": 60,
+  "seconds": 30,
+  "scenes": [
+    "VORTEX 漩涡",
+    "GROWTH 生长",
+    "PULSE 脉冲",
+    "DRIFT 漂流",
+    "VEIL 帷幕",
+    "RIBBON 丝带",
+    "DOME 穹顶 · fisheye",
+    "CANOPY 林冠 · fisheye",
+    "NEBULA 星云 · fisheye"
+  ],
+  "transitionFrames": 12,
+  "material": "chrome",
+  "density": 3,
+  "trackingScenes": [
+    2,
+    8
+  ],
+  "elapsedSeconds": 45.61,
+  "renderBackend": "Project GLSL rendered by standalone OpenGL; fixed 1/60 s simulation for final frames",
+  "bytes": 382025846
+}

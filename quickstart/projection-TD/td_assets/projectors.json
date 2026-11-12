@@ -1,0 +1,72 @@
+{
+ "projector": "Panasonic PT-RQ45K class (assumed), 3840x2400 Quad Pixel Drive",
+ "units": "m, Y-up",
+ "wall_unfolded_m": [
+  27.784,
+  6.0
+ ],
+ "content_canvas": [
+  7680,
+  1656
+ ],
+ "sections_m": [
+  0.0,
+  0.57,
+  12.881,
+  14.911,
+  27.214,
+  27.784
+ ],
+ "cameras": {
+  "L": {
+   "target_group": "wall_L",
+   "t": [
+    8.0,
+    4.5,
+    -15.0
+   ],
+   "r": [
+    -8.6541,
+    -110.2918,
+    0.0
+   ],
+   "rord": "xyz",
+   "fov_h_deg": 54.8906,
+   "fov_v_deg": 35.9665,
+   "throw_ratio": 0.96,
+   "resolution": [
+    3840,
+    2400
+   ],
+   "native": [
+    1920,
+    1200
+   ]
+  },
+  "R": {
+   "target_group": "wall_R",
+   "t": [
+    22.0,
+    4.5,
+    -15.0
+   ],
+   "r": [
+    -8.6121,
+    110.1891,
+    0.0
+   ],
+   "rord": "xyz",
+   "fov_h_deg": 54.6999,
+   "fov_v_deg": 35.8297,
+   "throw_ratio": 0.97,
+   "resolution": [
+    3840,
+    2400
+   ],
+   "native": [
+    1920,
+    1200
+   ]
+  }
+ }
+}

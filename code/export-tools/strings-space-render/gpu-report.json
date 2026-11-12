@@ -1,0 +1,50 @@
+{
+  "backend": "Standalone OpenGL 3.3, original GLSL ES converted to desktop GLSL; not a browser benchmark",
+  "GPU": "NVIDIA GeForce RTX 4080 Laptop GPU/PCIe/SSE2",
+  "resolution": [
+    1920,
+    1080
+  ],
+  "activeStrings": 12000,
+  "segments": 128,
+  "programsCompiled": [
+    "sim",
+    "line",
+    "dot",
+    "floor",
+    "blur",
+    "comp",
+    "track"
+  ],
+  "sampledHeadCenters": [
+    [
+      0.07920125871896744,
+      -0.5178999304771423,
+      0.08212525397539139,
+      74.75471496582031
+    ],
+    [
+      0.07054515182971954,
+      -0.10607033222913742,
+      -0.20799440145492554,
+      168.1397705078125
+    ],
+    [
+      0.036880187690258026,
+      0.004263478331267834,
+      -0.3746393322944641,
+      178.4641876220703
+    ],
+    [
+      -0.01986047439277172,
+      0.1571047455072403,
+      -0.43172162771224976,
+      179.478271484375
+    ]
+  ],
+  "singleDrawGpuMs": {
+    "original": 6.363136,
+    "chrome": 12.069888
+  },
+  "previewDirectory": "D:\\Codex\\workspace\\2026-11-11\\new-chat\\outputs\\strings-space"
+}

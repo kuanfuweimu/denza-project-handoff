@@ -1,0 +1,13 @@
+*.zip
+*.mp4
+*.mov
+*.webm
+*.wav
+*.pyc
+__pycache__/
+node_modules/
+python-libs/
+browser-profile/
+.env*
+.vercel/
+.claude/

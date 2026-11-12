@@ -1,0 +1,57 @@
+{
+  "path": "/project1/mapping_denza",
+  "operators": [
+    {
+      "path": "/project1/mapping_denza/moviefilein_uv_template",
+      "type": "moviefileinTOP",
+      "family": "TOP",
+      "cookTime": 384.5052,
+      "cpuCookTime": 384.5052,
+      "budgetPct": 2307.0
+    },
+    {
+      "path": "/project1/mapping_denza/render_proj_L",
+      "type": "renderTOP",
+      "family": "TOP",
+      "cookTime": 221.5893,
+      "cpuCookTime": 221.5893,
+      "budgetPct": 1329.5
+    },
+    {
+      "path": "/project1/mapping_denza/sim_preview/render_sim",
+      "type": "renderTOP",
+      "family": "TOP",
+      "cookTime": 65.5631,
+      "cpuCookTime": 65.5631,
+      "budgetPct": 393.4
+    },
+    {
+      "path": "/project1/mapping_denza/layout_outputs",
+      "type": "layoutTOP",
+      "family": "TOP",
+      "cookTime": 26.5299,
+      "cpuCookTime": 26.5299,
+      "budgetPct": 159.2
+    },
+    {
+      "path": "/project1/mapping_denza/sim_preview/light_proj_L",
+      "type": "lightCOMP",
+      "family": "COMP",
+      "cookTime": 23.4446,
+      "cpuCookTime": 23.4446,
+      "budgetPct": 140.7,
+      "childrenCPUCookTime": 0.0,
+      "childrenGPUCookTime": 0.0
+    },
+    {
+      "path": "/project1/mapping_denza/level_blackout",
+      "type": "levelTOP",
+      "family": "TOP",
+      "cookTime": 18.3468,
+      "cpuCookTime": 18.3468,
+      "budgetPct": 110.1
+    }
+  ],
+  "count": 6,
+  "sort": "cpu"
+}

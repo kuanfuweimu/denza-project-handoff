@@ -1,0 +1,47 @@
+[
+  {
+    "scene": 1,
+    "beforeP99": 0.6196,
+    "gain": 3.8
+  },
+  {
+    "scene": 2,
+    "beforeP99": 0.8,
+    "gain": 1.833
+  },
+  {
+    "scene": 3,
+    "beforeP99": 0.8314,
+    "gain": 1.487
+  },
+  {
+    "scene": 4,
+    "beforeP99": 0.7647,
+    "gain": 2.256
+  },
+  {
+    "scene": 5,
+    "beforeP99": 0.749,
+    "gain": 2.457
+  },
+  {
+    "scene": 6,
+    "beforeP99": 0.7412,
+    "gain": 2.561
+  },
+  {
+    "scene": 7,
+    "beforeP99": 0.7255,
+    "gain": 2.775
+  },
+  {
+    "scene": 8,
+    "beforeP99": 0.8314,
+    "gain": 1.487
+  },
+  {
+    "scene": 9,
+    "beforeP99": 0.7255,
+    "gain": 2.775
+  }
+]

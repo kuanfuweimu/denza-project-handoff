@@ -1,0 +1,122 @@
+{
+  "https://www.youtube.com/c/monocolor": [
+    {
+      "key": "monocolor_entangled",
+      "caption": "Entangled Structures · 穹顶线束",
+      "source_url": "https://mnclr.com/entangled-structures"
+    },
+    {
+      "key": "monocolor_entangled_extra",
+      "caption": "Entangled Structures · 官方作品图",
+      "source_url": "https://mnclr.com/entangled-structures"
+    },
+    {
+      "key": "monocolor_noosphere",
+      "caption": "NOOSPHERE · 点云空间",
+      "source_url": "https://mnclr.com/noosphere"
+    },
+    {
+      "key": "monocolor_noosphere_extra",
+      "caption": "NOOSPHERE · 官方作品图",
+      "source_url": "https://mnclr.com/noosphere"
+    }
+  ],
+  "https://ouchhh.tv/": [
+    {
+      "key": "ouchhh_poetic",
+      "caption": "POETIC AI · 沉浸式建筑投影",
+      "source_url": "https://ouchhh.tv/POETIC-AI-Exhibition-Paris"
+    },
+    {
+      "key": "ouchhh_poetic_extra1",
+      "caption": "POETIC AI · 展览空间",
+      "source_url": "https://ouchhh.tv/POETIC-AI-Exhibition-Paris"
+    },
+    {
+      "key": "ouchhh_poetic_extra2",
+      "caption": "POETIC AI · 建筑投影",
+      "source_url": "https://ouchhh.tv/POETIC-AI-Exhibition-Paris"
+    },
+    {
+      "key": "ouchhh_poetic_extra3",
+      "caption": "POETIC AI · 空间画面",
+      "source_url": "https://ouchhh.tv/POETIC-AI-Exhibition-Paris"
+    },
+    {
+      "key": "ouchhh_datamonolith",
+      "caption": "AI DATAMONOLITH · 官方项目视觉图",
+      "source_url": "https://ouchhh.tv/AI-DATAMONOLITH-1"
+    },
+    {
+      "key": "ouchhh_datamonolith_extra",
+      "caption": "AI DATAMONOLITH · 官方项目视觉图",
+      "source_url": "https://ouchhh.tv/AI-DATAMONOLITH-1"
+    }
+  ],
+  "https://www.youtube.com/watch?v=CknHVdMZ5xg": [
+    {
+      "key": "cinematique_01",
+      "caption": "Cinématique · 点阵地面与身体（官方作品图） · 摄影：Magali Bazi",
+      "source_url": "https://adrien-m.net/projet/cinematique/"
+    },
+    {
+      "key": "cinematique_02",
+      "caption": "Cinématique · 巨幅文字与人物剪影（官方作品图） · 摄影：Raoul Lemercier",
+      "source_url": "https://adrien-m.net/projet/cinematique/"
+    },
+    {
+      "key": "cinematique_03",
+      "caption": "Cinématique · 文字坠落的舞台空间（官方作品图） · 摄影：Raoul Lemercier",
+      "source_url": "https://adrien-m.net/projet/cinematique/"
+    },
+    {
+      "key": "cinematique_04",
+      "caption": "Cinématique · 网格曲面与身体重心（官方作品图） · 摄影：Adrien Mondot",
+      "source_url": "https://adrien-m.net/projet/cinematique/"
+    }
+  ],
+  "https://www.youtube.com/watch?v=xvJNia3z11I": [
+    {
+      "key": "hakanai_01",
+      "caption": "Hakanaï · 立方体边界中的网格变形（官方作品图） · 摄影：Romain Etienne",
+      "source_url": "https://adrien-m.net/projet/hakanai/"
+    },
+    {
+      "key": "hakanai_02",
+      "caption": "Hakanaï · 水平光线与舞者（官方作品图） · 摄影：Romain Etienne",
+      "source_url": "https://adrien-m.net/projet/hakanai/"
+    },
+    {
+      "key": "hakanai_03",
+      "caption": "Hakanaï · 粒子雨中的身体（官方作品图） · 摄影：Virginie Serneels",
+      "source_url": "https://adrien-m.net/projet/hakanai/"
+    },
+    {
+      "key": "hakanai_04",
+      "caption": "Hakanaï · 网格扭转形成的空间（官方作品图） · 摄影：Romain Etienne",
+      "source_url": "https://adrien-m.net/projet/hakanai/"
+    }
+  ],
+  "https://www.youtube.com/watch?v=eXduT_mdbQc": [
+    {
+      "key": "homeomorphism_01",
+      "caption": "H OM E OMOR PH ISM / CERN_DOME INSTALLATION · 穹顶上的环形数据纹理（官方作品图） · 摄影：Ouchhh",
+      "source_url": "https://ouchhh.tv/H-OM-E-OMOR-PH-ISM"
+    },
+    {
+      "key": "homeomorphism_02",
+      "caption": "H OM E OMOR PH ISM / CERN_DOME INSTALLATION · 黑白层叠体与穹顶尺度（官方作品图） · 摄影：Ouchhh",
+      "source_url": "https://ouchhh.tv/H-OM-E-OMOR-PH-ISM"
+    },
+    {
+      "key": "homeomorphism_03",
+      "caption": "H OM E OMOR PH ISM / CERN_DOME INSTALLATION · 线条编织的穹顶构图（官方作品图） · 摄影：Ouchhh",
+      "source_url": "https://ouchhh.tv/H-OM-E-OMOR-PH-ISM"
+    },
+    {
+      "key": "homeomorphism_04",
+      "caption": "H OM E OMOR PH ISM / CERN_DOME INSTALLATION · 块体阵列的空间形变（官方作品图） · 摄影：Ouchhh",
+      "source_url": "https://ouchhh.tv/H-OM-E-OMOR-PH-ISM"
+    }
+  ]
+}

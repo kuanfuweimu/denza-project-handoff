@@ -1,0 +1,32 @@
+[
+  {
+    "video": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-web\\out\\strings-web_showcase_30s_4k60_music.mp4",
+    "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-web\\out\\strings-web_showcase_30s_4k60.mp4",
+    "music": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\_work\\showcase-music\\score-1-master.wav",
+    "tempo": 72,
+    "bars": 9,
+    "seconds": 30,
+    "videoEncoding": "copied without re-encoding",
+    "musicOrigin": "Original procedural composition, no external samples"
+  },
+  {
+    "video": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-space\\out\\strings-space_showcase_30s_4k60_reference_v2_music.mp4",
+    "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-space\\out\\strings-space_showcase_30s_4k60_reference_v2.mp4",
+    "music": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\_work\\showcase-music\\score-2-master.wav",
+    "tempo": 72,
+    "bars": 9,
+    "seconds": 30,
+    "videoEncoding": "copied without re-encoding",
+    "musicOrigin": "Original procedural composition, no external samples"
+  },
+  {
+    "video": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-space\\out\\strings-space_showcase_30s_4k60_subject_only_music.mp4",
+    "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-space\\out\\strings-space_showcase_30s_4k60_subject_only.mp4",
+    "music": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\_work\\showcase-music\\score-3-master.wav",
+    "tempo": 72,
+    "bars": 9,
+    "seconds": 30,
+    "videoEncoding": "copied without re-encoding",
+    "musicOrigin": "Original procedural composition, no external samples"
+  }
+]
