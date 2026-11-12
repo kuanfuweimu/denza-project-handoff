@@ -1,0 +1,10 @@
+{
+  "archives": 12,
+  "uniqueFilesValidated": 658,
+  "logicalFiles": 787,
+  "projectionRestoreFiles": 209,
+  "projectionRestore": "passed on empty D-drive destination",
+  "sourceFilesVerification": "787 of 787 matched manifest",
+  "pathTraversalRejection": "passed",
+  "seconds": 8.0
+}
