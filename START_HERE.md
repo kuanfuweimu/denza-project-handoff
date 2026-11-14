@@ -19,7 +19,8 @@
 - 三场景 Figma 整理、黑底白字及原比例图片；共享方案网页已上下滚动。
 - WEB 与 SPACE 独立公开代码仓库；三条30秒4K60 showcase带音乐版已输出并解码检查；无声版保留。
 - SPACE 纯主体导出已去除地面、倒影、拱线、网格、静态线束、可见灯点；仅导出脚本改变，实时SPACE仍含环境。
-- 便携 mapping TD 已做资产路径归档和解包一致性检查；**未做本次 TD 实机/现场校准**。
+- 便携 mapping TD 已做资产路径归档和解包一致性检查；**2026-11-14 新增「一机投双墙 + 一机投地面」TouchDesigner 工程 (`quickstart/projection-wall-floor-TD/DENZA_Z_WallFloor_Mapping_POPs.toe` & `scene1.toe`) 已在 TouchDesigner 2025.32460 通过 TDMCP 完成实机生成与零报错验证**（含 `/project1/z_dance_pops` 100% 原生 POPs 生成器与 `/project1/mapping_wall_floor` 3D 墙地对位系统）。
+- 11/13《Z dance concept:break down》21页舞蹈分镜 PDF 已拆解归档于 `quickstart/dance-concept-1113/`，配套 WebGL2 实时墙地双投系统位于 `code/strings-z-dance/`（3 条 4K60 30s 母带位于 Release `denza-assets-13.zip`）。
 
 ## 不需要从头再问用户
 

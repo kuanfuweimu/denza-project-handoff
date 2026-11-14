@@ -53,3 +53,12 @@
 用户指定的新SKP在 `DENZA N/腾势空间结构.skp`；旧模拟保存了另一份 `计算与模拟/source.skp`，两份文件大小不同。必须比较几何/版本，不要默认为完全一致。
 
 归档TD已将5个模型/图像依赖改为同目录td_assets，并校验重打包内容一致；`runtime_tested:false`。旧工程可能含SOP读取模型，这是旧档现状；新内容不按此例新增SOP。
+
+## 2026-11-14 架构更新：【场景一：墙面与地面 Projection（Scene 1 Wall & Floor Projection）】——「一机投双墙 + 一机投地面」
+
+基于 `D:\Kuanfuweimu\2-Commission\VJ Commission\DENZA N\腾势空间结构.skp` 实测提取几何，场景一最新双机分工如下（详见 `DENZA N\td_assets_wall_floor\projectors_wall_floor.json` 与 `coverage_wall_floor_plan.png`）：
+
+| 投影通道 | 目标表面与实测几何 | 模拟机位 (SketchUp Z-up m) | 投射距离 (Throw Distance) | 投射比 (Throw Ratio) 初算 |
+|---|---|---|---|---|
+| **Projector #1 (`WALL_COMBINED`)** | 左右两面折墙合为一幅画面<br>展开 `27.784m × 6.0m`<br>V口横向直线跨度 `20.58m` | `[15.0, 27.5, 4.2]`<br>（低于 `Z=5.01m` 中央悬吊方盒底沿） | 左右翼前缘 `14.9m`<br>V墙中心折角 `19.5m`<br>平均 `15.6m` | 满铺 `20.58m` 跨度：`TR ≈ 0.55–0.58` (`FOV_H ≈ 82°`)<br>核心 `17.5m` 区域：`TR ≈ 0.65–0.75` |
+| **Projector #2 (`FLOOR_STAGE`)** | V墙前方菱形舞台地面单独投射<br>有效尺寸 `18.0m × 11.25m` (`128.5㎡`)<br>核心舞者圆环中心 `[15.0, 13.6, 0.0]` (`R=3.2m`) | `[15.0, 21.5, 5.8]`（前高马道陡投）<br>或 `[15.0, 17.5, 5.95]`（方盒底板下） | 近端 `5.9m` ~ 远端 `14.6m`<br>中心点 `9.8m` | 满铺 `15.8m × 11.2m`：`TR ≈ 0.62` (`FOV_H ≈ 78°`)<br>核心 `12m × 7.5m` 舞者区：`TR ≈ 0.80` |

@@ -1,0 +1,147 @@
+{
+  "schema": "denza-wall-floor-dual-projection-v1",
+  "updated_at": "2026-11-14",
+  "architecture": "1 Projector -> Both V-Walls Combined + 1 Projector -> Stage Floor Separate",
+  "projector_assumed": "Panasonic PT-RQ45K class (assumed reference, 3840x2400 16:10 or 3840x2160 16:9)",
+  "units": "m, TD Y-up (SketchUp Z-up converted via (x,y,z)->(x,z,-y))",
+  "wall_geometry": {
+    "unfolded_width_m": 27.784,
+    "direct_span_width_m": 20.58,
+    "height_m": 6.0,
+    "apex_xy_m": [
+      15.0,
+      8.02
+    ],
+    "wings_xy_m": [
+      [
+        4.71,
+        16.72
+      ],
+      [
+        25.29,
+        16.72
+      ]
+    ],
+    "visible_area_m2": 159.8,
+    "recommended_canvas_unfolded": [
+      7680,
+      1656
+    ],
+    "recommended_canvas_16_9": [
+      3840,
+      2160
+    ],
+    "recommended_projector_output": [
+      3840,
+      2400
+    ]
+  },
+  "floor_geometry": {
+    "active_stage_width_m": 18.0,
+    "active_stage_depth_m": 11.25,
+    "active_stage_area_m2": 128.5,
+    "full_diamond_floor_area_m2": 295.8,
+    "recommended_canvas_16_9": [
+      3840,
+      2160
+    ],
+    "recommended_projector_output": [
+      3840,
+      2400
+    ]
+  },
+  "cameras": {
+    "WALL": {
+      "name": "WALL_COMBINED (一台投影投两面折墙)",
+      "target_group": "wall_combined",
+      "pos_skp_m": [
+        15.0,
+        27.5,
+        4.2
+      ],
+      "aim_skp_m": [
+        15.0,
+        12.2,
+        2.7
+      ],
+      "t": [
+        15.0,
+        2.8,
+        -25.5
+      ],
+      "r": [
+        0.4407,
+        -180.0,
+        0.0
+      ],
+      "rord": "xyz",
+      "fov_h_deg": 98.0,
+      "fov_v_deg": 57.031,
+      "throw_ratio": 0.575,
+      "center_throw_distance_m": 15.37,
+      "image_width_at_center_m": 26.73,
+      "resolution": [
+        3840,
+        2400
+      ],
+      "notes": "单机居中正投两面V形折墙合成画面；机位高度4.2m避开5.01m吊顶下沿遮挡；到折墙翼端14.9m、到V角顶点19.5m、平均投距约15.6m；全幅20.58m开口需约0.55-0.58短焦镜头（若缩窄两侧翼边投核心17.5m折墙则镜头比约0.65-0.75）。",
+      "pos_sketchup_m": [
+        15.0,
+        25.5,
+        2.8
+      ],
+      "target_sketchup_m": [
+        15.0,
+        12.5,
+        2.9
+      ],
+      "throw_ratio_full_span": 0.435
+    },
+    "FLOOR": {
+      "name": "FLOOR_STAGE (一台投影单独投地面)",
+      "target_group": "floor_stage",
+      "pos_skp_m": [
+        15.0,
+        21.5,
+        5.8
+      ],
+      "aim_skp_m": [
+        15.0,
+        13.6,
+        0.0
+      ],
+      "t": [
+        15.0,
+        4.8,
+        -19.8
+      ],
+      "r": [
+        -36.8699,
+        -180.0,
+        0.0
+      ],
+      "rord": "xyz",
+      "fov_h_deg": 82.0,
+      "fov_v_deg": 53.689,
+      "throw_ratio": 0.617,
+      "center_throw_distance_m": 9.8,
+      "image_width_at_center_m": 15.87,
+      "resolution": [
+        3840,
+        2400
+      ],
+      "notes": "单机高机位斜下投射V形墙前方舞台地面；机位位于中庭顶部(Z=5.8m, Y=21.5m)朝舞台中心(Y=13.6m, Z=0m)俯投；中心投距约9.8m（最短5.9m、最远14.6m），覆盖宽约15.8m×深11.2m舞台地面，镜头比约0.62（若仅投中心12m×7.5m核心舞区则镜头比约0.80）。",
+      "pos_sketchup_m": [
+        15.0,
+        19.8,
+        4.8
+      ],
+      "target_sketchup_m": [
+        15.0,
+        13.4,
+        0.0
+      ],
+      "throw_ratio_full_stage": 0.575
+    }
+  }
+}

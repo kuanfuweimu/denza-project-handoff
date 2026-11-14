@@ -56,6 +56,17 @@ python -m pip install --target '<项目根>\_work\strings-space-render\python-li
 
 不要盲目用示例版本覆盖已有环境；优先按runtime-versions中的真实版本安装。工具默认拒绝覆盖已存在视频，重导出要改新文件名。
 
-## TD遗留内容
+## TD 2026-11-14 墙地双投实机工程与遗留内容
 
-`05_线条生长_POPS` 与 `DENZA N/strings-td` 已保留，包括失败/试验的代码、toe和预览。此前本地TD API曾失去响应，用户否定过实现；这些不标记为“交付合格”。原生POPs路线如重启，需要从当前运行网络检查再做，禁止SOP的新实现要求仍有效。
+### 1. 2026-11-14 【场景一：墙面与地面 Projection】实机验证工程 (`quickstart/场景1_墙面与地面_Projection`)
+
+- 本机路径：`D:\Kuanfuweimu\2-Commission\VJ Commission\DENZA N\td_wall_floor_pops`（同步归档于 `DENZA 2\2026-11_DENZA Z\01_场景1_墙面双投影\墙地双投方案_1114` 与仓库 `quickstart/projection-wall-floor-TD`）
+- 工程文件：`场景1_墙面与地面_Projection.toe`、`DENZA_Z_WallFloor_Mapping_POPs.toe` 与 `scene1.toe`（已在 **TouchDesigner 2025.32460** 中通过 TDMCP 实机生成并零报错验证，`get_errors: 0`）
+- 两个核心交互模块：
+  1. `/project1/z_dance_pops`：100% 原生 POPs 视觉生成器（零 SOP、零 GLSL TOP，所有 Null 算子 `#2F59AD`，POPs Annotate 框 SOP 蓝），含 `Z Dance Controls` 交互面板（6 大章节切换/自动循环、舞者 X/Z 坐标、拉扯张力、腾势橙爆发、Z 字网格、脉冲速度），双路输出 `3840×2160` (`null_pops_wall` / `null_pops_floor`)。
+  2. `/project1/mapping_wall_floor`：墙地双投 3D 对位与物理光锥阴影模拟系统，加载 `td_assets_wall_floor` 下的 `wall_combined.obj`、`floor_stage.obj`、`occluder.obj`、`columns_fg.obj` 及对位网格贴图，支持信号源切换（POPs 实时生成 / 4K60 母带视频 / Spout）、UV 校准网格一键开关、前景斜柱遮挡开关及双投影机 3D 坐标/FOV 实时微调。
+- 配套 WebGL2 实时墙地双投系统：`code/strings-z-dance`（端口 `8789`），已离屏渲染 3 条 `3840×2160 @ 60fps` 30 秒母带（`z-dance_wall_combined_30s_4k60.mp4`、`z-dance_floor_stage_30s_4k60.mp4`、`z-dance_stage3d_split_30s_4k60.mp4`）。
+
+### 2. 早期 TD 遗留内容
+
+`05_线条生长_POPS` 与 `DENZA N/strings-td` 已保留，包括早期试验代码、toe和预览。

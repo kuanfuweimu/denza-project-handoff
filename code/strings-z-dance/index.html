@@ -1,0 +1,748 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DENZA Z · 舞蹈视觉与墙地双投系统 (Wall Combined + Floor Stage)</title>
+<style>
+  html, body {
+    margin: 0; padding: 0; width: 100%; height: 100%;
+    background: #050608; color: #e8ecf4;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+    overflow: hidden; user-select: none;
+  }
+  canvas { display: block; width: 100vw; height: 100vh; }
+  #hud {
+    position: fixed; top: 16px; left: 18px; right: 18px;
+    display: flex; justify-content: space-between; align-items: flex-start;
+    pointer-events: none; transition: opacity 0.2s ease; z-index: 10;
+  }
+  #hud.hidden { opacity: 0; }
+  .hud-card {
+    background: rgba(10, 12, 18, 0.78);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(8px);
+    padding: 10px 14px; border-radius: 6px;
+    font-size: 12px; line-height: 1.55;
+  }
+  .hud-title { font-size: 14px; font-weight: 600; color: #fff; margin-bottom: 3px; }
+  .tag-orange { color: #ff6e26; font-weight: 600; }
+  .tag-cyan { color: #26d8ff; font-weight: 600; }
+  .split-labels {
+    position: fixed; inset: 0; pointer-events: none; z-index: 5;
+  }
+  .split-labels.hidden { display: none; }
+  .pane-label {
+    position: absolute; background: rgba(8, 10, 14, 0.82);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 5px 10px; border-radius: 4px; font-size: 12px; color: #dce4f2;
+  }
+</style>
+</head>
+<body>
+<canvas id="glcanvas"></canvas>
+
+<div id="hud">
+  <div class="hud-card">
+    <div class="hud-title" id="hudScene">Ch.1 单线握持 · 轴向旋转与圆环对接 (P12–P13)</div>
+    <div>视图模式：<span class="tag-cyan" id="hudView">SPLIT 四分屏总览（左：双墙合投 + 地面独投 | 右：SketchUp 3D 现场双投模拟）</span></div>
+    <div>架构：<span class="tag-orange">投影机 #1 → 左右双墙合成单画面 (27.78m×6m)</span> | <span class="tag-cyan">投影机 #2 → 舞台地面单独画面 (18m×11.25m)</span></div>
+  </div>
+  <div class="hud-card" style="text-align:right">
+    <div>FPS: <span id="hudFps">60</span> | 分辨率: <span id="hudRes">1920×1080</span></div>
+    <div>快捷键: [1-6] 章节 | [V] 切换视图(分屏/双墙/地面/3D) | [G] 校准网格 | [H] 隐藏HUD | [C] 控台</div>
+  </div>
+</div>
+
+<div id="splitLabels" class="split-labels">
+  <div class="pane-label" style="left:16px; top:110px; border-left:3px solid #ff6e26;">
+    <b>输出 #1 · WALL_COMBINED（一台投影仪投左右两面折墙）</b> · 展开 27.78m × 6.0m | 中间蓝线为 V 角折缝
+  </div>
+  <div class="pane-label" style="left:16px; top:calc(50vh + 14px); border-left:3px solid #26d8ff;">
+    <b>输出 #2 · FLOOR_STAGE（一台投影仪单独投舞台地面）</b> · 覆盖 18.0m × 11.25m | 上沿接折墙底边
+  </div>
+  <div class="pane-label" style="left:calc(46vw + 18px); top:110px; border-left:3px solid #ffc44d;">
+    <b>SketchUp 3D 现场空间双投实时模拟</b> · 鼠标拖拽旋转视角 / 滚轮缩放 · 含 V 形折墙 + 菱形舞台地面 + 4根斜柱 + 中庭悬挂顶框
+  </div>
+</div>
+
+<script>
+const SCENES = [
+  { id: 0, name: "Ch.1 单线握持 · 轴向旋转与圆环对接 (P12–P13)", orange: 0.05, glitch: 0.0, density: 0.35, speed: 0.85, weave: 0.15 },
+  { id: 1, name: "Ch.2 碳纤维致密编织 · 平行/交错张力线阵 (P3, P14)", orange: 0.12, glitch: 0.0, density: 0.72, speed: 1.0, weave: 0.85 },
+  { id: 2, name: "Ch.3 腾势橙光影引入 · Push/Pull 穿插织网 (P10, P15)", orange: 0.88, glitch: 0.08, density: 0.78, speed: 1.15, weave: 0.55 },
+  { id: 3, name: "Ch.4 橙光故障线阵 · Orange Light & Glitch Aesthetic (P16)", orange: 0.95, glitch: 0.85, density: 0.90, speed: 1.45, weave: 0.65 },
+  { id: 4, name: "Ch.5 Z字交错几何构图 · 威亚网格墙空间 (P17–P18)", orange: 0.68, glitch: 0.15, density: 0.82, speed: 1.0, weave: 0.90 },
+  { id: 5, name: "Ch.6 轮胎滚动序列波 · 破雾光刃与终章爆发 (P19–P21)", orange: 0.75, glitch: 0.22, density: 0.95, speed: 1.35, weave: 0.75 }
+];
+
+const VIEW_MODES = ["split", "wall", "floor", "stage3d"];
+const VIEW_LABELS = {
+  split: "SPLIT 四分屏总览（左：双墙合投 + 地面独投 | 右：SketchUp 3D 现场双投模拟）",
+  wall: "WALL_COMBINED 投影机 #1 全屏输出（左右两面折墙合成一幅画面）",
+  floor: "FLOOR_STAGE 投影机 #2 全屏输出（舞台地面单独投射画面）",
+  stage3d: "STAGE_3D SketchUp 现场空间双投实时模拟预览"
+};
+
+const params = new URLSearchParams(location.search);
+const state = {
+  scene: Math.max(0, Math.min(5, (parseInt(params.get("scene") || "1", 10) - 1))),
+  view: VIEW_MODES.includes(params.get("view")) ? params.get("view") : "split",
+  orange: 0.05,
+  glitch: 0.0,
+  density: 0.35,
+  speed: 0.85,
+  weave: 0.15,
+  exposure: 1.15,
+  calGrid: params.get("grid") === "1" ? 1.0 : 0.0,
+  occluderMask: 1.0,
+  blackout: 0.0,
+  autoCycle: false,
+  orbitYaw: 0.0,
+  orbitPitch: 0.30,
+  orbitDist: 15.5
+};
+
+function applyScenePreset(idx) {
+  state.scene = (idx + SCENES.length) % SCENES.length;
+  const s = SCENES[state.scene];
+  targetState.orange = s.orange;
+  targetState.glitch = s.glitch;
+  targetState.density = s.density;
+  targetState.speed = s.speed;
+  targetState.weave = s.weave;
+  updateHud();
+  broadcastState();
+}
+
+const targetState = { ...state };
+applyScenePreset(state.scene);
+
+const bc = new BroadcastChannel("strings_z_dance");
+bc.onmessage = (ev) => {
+  const d = ev.data || {};
+  if (typeof d.scene === "number") applyScenePreset(d.scene);
+  if (d.view && VIEW_MODES.includes(d.view)) { state.view = d.view; updateHud(); }
+  for (const k of ["orange", "glitch", "density", "speed", "weave", "exposure", "calGrid", "occluderMask", "blackout", "orbitYaw", "orbitPitch", "orbitDist"]) {
+    if (typeof d[k] === "number") targetState[k] = d[k];
+  }
+  if (typeof d.autoCycle === "boolean") state.autoCycle = d.autoCycle;
+  if (d.cmd === "ping") broadcastState();
+};
+
+function broadcastState() {
+  bc.postMessage({
+    type: "state",
+    scene: state.scene,
+    view: state.view,
+    orange: targetState.orange,
+    glitch: targetState.glitch,
+    density: targetState.density,
+    speed: targetState.speed,
+    weave: targetState.weave,
+    exposure: targetState.exposure,
+    calGrid: targetState.calGrid,
+    occluderMask: targetState.occluderMask,
+    blackout: targetState.blackout,
+    autoCycle: state.autoCycle,
+    orbitYaw: targetState.orbitYaw,
+    orbitPitch: targetState.orbitPitch,
+    orbitDist: targetState.orbitDist
+  });
+}
+
+function updateHud() {
+  document.getElementById("hudScene").textContent = SCENES[state.scene].name;
+  document.getElementById("hudView").textContent = VIEW_LABELS[state.view];
+  const sl = document.getElementById("splitLabels");
+  const hud = document.getElementById("hud");
+  sl.classList.toggle("hidden", state.view !== "split" || hud.classList.contains("hidden"));
+}
+
+const canvas = document.getElementById("glcanvas");
+const gl = canvas.getContext("webgl2", { antialias: false, preserveDrawingBuffer: true });
+
+const VS_QUAD = `#version 300 es
+void main() {
+  vec2 p = vec2((gl_VertexID << 1) & 2, gl_VertexID & 2);
+  gl_Position = vec4(p * 2.0 - 1.0, 0.0, 1.0);
+}`;
+
+// Shader generating both Wall Canvas (uTarget=0) and Floor Canvas (uTarget=1)
+const FS_CANVAS = `#version 300 es
+precision highp float;
+out vec4 fragColor;
+uniform vec2 uRes;
+uniform float uTime;
+uniform int uTarget; // 0 = WALL_COMBINED (27.78m x 6m), 1 = FLOOR_STAGE (18m x 11.25m)
+uniform int uScene;
+uniform float uOrange;
+uniform float uGlitch;
+uniform float uDensity;
+uniform float uWeave;
+uniform float uExposure;
+uniform float uCalGrid;
+uniform float uOccMask;
+
+float hash11(float p) {
+  p = fract(p * 0.1031);
+  p *= p + 33.33;
+  p *= p + p;
+  return fract(p);
+}
+float hash21(vec2 p) {
+  vec3 p3 = fract(vec3(p.xyx) * 0.1031);
+  p3 += dot(p3, p3.yzx + 33.33);
+  return fract((p3.x + p3.y) * p3.z);
+}
+float noise(vec2 x) {
+  vec2 i = floor(x), f = fract(x);
+  f = f * f * (3.0 - 2.0 * f);
+  return mix(mix(hash21(i), hash21(i + vec2(1,0)), f.x),
+             mix(hash21(i + vec2(0,1)), hash21(i + vec2(1,1)), f.x), f.y);
+}
+
+vec3 renderWall(vec2 uv) {
+  // uv.x: 0 (Right wall wing) -> 0.5 (V-apex seam) -> 1.0 (Left wall wing)
+  // uv.y: 0 (floor base 0m) -> 1.0 (top 6m)
+  float t = uTime;
+  vec2 p = uv;
+  // Glitch displacement (P16)
+  if (uGlitch > 0.01) {
+    float band = floor(p.y * 28.0 + floor(t * 14.0));
+    float gTrig = step(1.0 - uGlitch * 0.45, hash11(band + floor(t * 18.0) * 7.13));
+    float shift = (hash11(band * 3.7) - 0.5) * 0.08 * uGlitch * gTrig;
+    p.x = fract(p.x + shift);
+  }
+
+  vec3 col = vec3(0.0);
+  float distToApex = abs(p.x - 0.5) * 2.0; // 0 at center V-apex, 1 at outer wings
+  float numLines = mix(10.0, 52.0, uDensity);
+
+  // 1. Carbon Fiber Intersecting Weave (P3: dense arrangement of intersecting lines)
+  if (uWeave > 0.01) {
+    vec2 wp1 = vec2(p.x * 4.62 + p.y * 1.15, p.y * 2.2 - p.x * 1.8);
+    float w1 = abs(fract(wp1.x * 16.0 - t * 0.25) - 0.5);
+    float w2 = abs(fract(wp1.y * 16.0 + t * 0.2) - 0.5);
+    float carbon = smoothstep(0.08, 0.0, w1) * 0.45 + smoothstep(0.08, 0.0, w2) * 0.45;
+    carbon *= (0.35 + 0.65 * noise(p * 12.0 + t * 0.4));
+    col += vec3(0.48, 0.54, 0.62) * carbon * uWeave * 0.45;
+  }
+
+  // 2. Scene-specific primary choreography visual layers
+  if (uScene == 0) {
+    // Ch.1 (P12-P13): Single Line runs through frame -> Dancer rotates around axis -> 5-dancer circle
+    float mainY = 0.42 + 0.05 * sin(p.x * 6.28318 - t * 1.6) * sin(t * 0.7);
+    float mainLine = exp(-abs(p.y - mainY) * 140.0) + 0.35 * exp(-abs(p.y - mainY) * 24.0);
+    col += vec3(0.92, 0.96, 1.0) * mainLine * 1.4;
+    // Helical rotating strands around axis
+    for (float i = 1.0; i <= 7.0; i += 1.0) {
+      float ph = i * 0.897 + t * (1.1 + i * 0.12);
+      float amp = (0.18 + 0.12 * sin(t * 0.5 + i)) * (1.0 - 0.45 * distToApex);
+      float yCurve = 0.42 + amp * sin((p.x - 0.5) * (8.0 + i * 1.5) + ph);
+      float d = abs(p.y - yCurve);
+      float strand = exp(-d * 180.0) + 0.2 * exp(-d * 32.0);
+      float dockPulse = pow(max(0.0, cos((p.x - 0.5) * 18.0 - t * 3.0 + i)), 8.0);
+      col += mix(vec3(0.75, 0.84, 0.96), vec3(1.0, 0.52, 0.18), uOrange * 0.5) * strand * (0.55 + 0.8 * dockPulse);
+    }
+  } else if (uScene == 1) {
+    // Ch.2 (P3, P14): Opposite / Parallel / Staggered multi-dancer lines + Carbon strength
+    for (float i = 0.0; i < 18.0; i += 1.0) {
+      float fy = (i + 0.5) / 18.0 * 0.82 + 0.05;
+      float dir = mod(i, 2.0) == 0.0 ? 1.0 : -1.0;
+      float wave = 0.018 * sin(p.x * 16.0 * dir + t * 2.2 + i * 1.3);
+      float d = abs(p.y - (fy + wave));
+      float seg = smoothstep(0.15, 0.55, sin(p.x * 12.0 * dir - t * 2.8 + i * 2.1));
+      float lineI = (exp(-d * 220.0) + 0.22 * exp(-d * 40.0)) * (0.35 + 0.65 * seg);
+      col += vec3(0.85, 0.90, 0.98) * lineI * 0.85;
+    }
+  } else if (uScene == 2) {
+    // Ch.3 (P10, P15): Orange-hued light & shadow + Lines extending from sides/back toward front (Push in / Pull out)
+    float pushPull = sin(t * 1.35);
+    // Volumetric orange light cones from V-apex and sides
+    float orangeCone = exp(-pow((p.x - 0.5) * 2.6, 2.0)) * (1.0 - p.y * 0.55) * (0.65 + 0.35 * sin(t * 1.8));
+    col += vec3(1.0, 0.36, 0.06) * orangeCone * uOrange * 0.75;
+    for (float i = 0.0; i < 24.0; i += 1.0) {
+      float sideOrigin = mod(i, 2.0) == 0.0 ? 0.0 : 1.0;
+      float targetY = 0.15 + 0.68 * hash11(i * 13.7);
+      float arch = sin(p.x * 3.14159) * (0.14 * pushPull * sin(i * 1.7 + t));
+      float yLine = mix(0.45, targetY, abs(p.x - sideOrigin)) + arch;
+      float d = abs(p.y - yLine);
+      float pulse = pow(max(0.0, sin((p.x - 0.5) * 10.0 * sign(0.5 - sideOrigin) - t * 3.2 + i)), 4.0);
+      vec3 lCol = mix(vec3(0.92, 0.94, 0.98), vec3(1.0, 0.42, 0.08), 0.55 + 0.45 * sin(i + t));
+      col += lCol * (exp(-d * 190.0) + 0.3 * exp(-d * 30.0)) * (0.45 + 0.85 * pulse);
+    }
+  } else if (uScene == 3) {
+    // Ch.4 (P16): Array of lines + Orange light effects + "Glitch" aesthetic
+    float gx = abs(fract(p.x * numLines) - 0.5);
+    float gy = abs(fract(p.y * (numLines * 0.35) + sin(floor(p.x * numLines) * 2.1 + t * 3.0) * 0.25) - 0.5);
+    float vLines = exp(-gx * 45.0) * (0.4 + 0.6 * step(0.2, hash21(vec2(floor(p.x * numLines), floor(t * 12.0)))));
+    float hGlitch = exp(-gy * 35.0) * step(0.65, hash11(floor(p.y * 24.0) + floor(t * 20.0)));
+    vec3 orangeGlow = vec3(1.0, 0.38, 0.05) * (exp(-abs(p.y - 0.42) * 4.5) * (0.6 + 0.4 * sin(p.x * 18.0 - t * 6.0)));
+    col += orangeGlow * uOrange * 0.85;
+    col += mix(vec3(0.88, 0.93, 1.0), vec3(1.0, 0.48, 0.12), uOrange * 0.7) * (vLines * 0.9 + hGlitch * 1.3);
+  } else if (uScene == 4) {
+    // Ch.5 (P17-P18): Ordered intersecting Z-shaped configuration + Illuminated Wall Grid (Tether Leap)
+    // Architectural wall grid (P6 & P18)
+    float gridU = abs(fract(p.x * 16.0) - 0.5);
+    float gridV = abs(fract(p.y * 4.0) - 0.5);
+    float wallGrid = (exp(-gridU * 55.0) + exp(-gridV * 55.0)) * 0.45;
+    col += vec3(0.55, 0.64, 0.78) * wallGrid;
+    // Giant intersecting Z-slashes across Left Wall, Center Apex, and Right Wall
+    for (float k = -1.0; k <= 1.0; k += 1.0) {
+      float cx = 0.5 + k * 0.24;
+      vec2 zp = vec2((p.x - cx) * 3.2, (p.y - 0.42) * 1.9);
+      float topBar = max(abs(zp.y - 0.42), max(abs(zp.x) - 0.48, 0.0));
+      float botBar = max(abs(zp.y + 0.42), max(abs(zp.x) - 0.48, 0.0));
+      float diag = max(abs(zp.y - zp.x * 0.88), max(abs(zp.x) - 0.48, 0.0));
+      float dZ = min(min(topBar, botBar), diag);
+      float zGlow = exp(-dZ * 95.0) + 0.35 * exp(-dZ * 18.0);
+      vec3 zCol = mix(vec3(0.95, 0.97, 1.0), vec3(1.0, 0.46, 0.10), uOrange * (k == 0.0 ? 0.85 : 0.45));
+      col += zCol * zGlow * 1.15;
+    }
+  } else {
+    // Ch.6 (P19-P21): Sequence formation mimicking movement of tires + Diagonal Cyber Beam (P20) + Full Burst (P21)
+    // Tire tread / sequence rolling wave across the 27.78m V-wall
+    for (float i = 0.0; i < 28.0; i += 1.0) {
+      float xSlot = (i + 0.5) / 28.0;
+      float phase = xSlot * 12.566 - t * 3.6;
+      float yCenter = 0.42 + 0.24 * sin(phase);
+      float barH = 0.12 + 0.10 * cos(phase * 2.0);
+      float dx = abs(p.x - xSlot) * 28.0;
+      float dy = max(0.0, abs(p.y - yCenter) - barH);
+      float tread = exp(-dx * 4.5) * exp(-dy * 45.0);
+      col += mix(vec3(0.75, 0.88, 1.0), vec3(1.0, 0.45, 0.12), uOrange * 0.65 * (0.5 + 0.5 * sin(phase))) * tread * 0.95;
+    }
+    // P20: Sharp diagonal light beam cutting through cyan/blue atmospheric smoke
+    float beamY = 0.18 + (p.x - 0.15) * 0.62 + 0.03 * sin(t * 0.8);
+    float dBeam = abs(p.y - beamY) * smoothstep(0.05, 0.2, p.x) * smoothstep(0.95, 0.8, p.x);
+    float smoke = noise(vec2(p.x * 6.0 - t * 0.35, p.y * 4.0 + t * 0.15)) * noise(p * 14.0 - t * 0.5);
+    col += vec3(0.12, 0.52, 0.72) * exp(-abs(p.y - beamY) * 5.5) * (0.4 + 0.9 * smoke);
+    col += vec3(0.92, 0.98, 1.0) * exp(-abs(p.y - beamY) * 160.0) * 1.8;
+  }
+
+  // Subtle V-corner architectural seam glow at uv.x = 0.5
+  col += vec3(0.18, 0.24, 0.32) * exp(-abs(uv.x - 0.5) * 180.0) * 0.45;
+
+  // Top 1.0m (uv.y > 0.833) canopy shadow soft roll-off when occluderMask is enabled
+  if (uOccMask > 0.5) {
+    col *= smoothstep(0.98, 0.81, uv.y);
+  }
+
+  // Optional Calibration Grid Overlay
+  if (uCalGrid > 0.01) {
+    float gx = abs(fract(uv.x * 27.784) - 0.5);
+    float gy = abs(fract(uv.y * 6.0) - 0.5);
+    float gLine = max(smoothstep(0.03, 0.0, gx), smoothstep(0.03, 0.0, gy));
+    float seam = smoothstep(0.003, 0.0, abs(uv.x - 0.5));
+    col = mix(col, max(col, vec3(0.15, 0.45, 0.65) * gLine + vec3(0.0, 0.9, 1.0) * seam), uCalGrid);
+  }
+
+  col *= uExposure;
+  col = col / (1.0 + col * 0.65);
+  return col;
+}
+
+vec3 renderFloor(vec2 uv) {
+  // uv.x: 0 (audience-left X=24m) -> 0.5 (center X=15m) -> 1.0 (audience-right X=6m)
+  // uv.y: 0 (front of stage Y=19.27m) -> 1.0 (V-wall apex Y=8.02m)
+  float t = uTime;
+  // Convert to real stage metres centered at Dancer Circle (X=15.0m, Y=13.6m -> uv=(0.5, 0.504))
+  vec2 stageM = vec2((uv.x - 0.5) * 18.0, (uv.y - 0.504) * 11.25);
+  float r = length(stageM);
+  float ang = atan(stageM.y, stageM.x);
+
+  if (uGlitch > 0.01) {
+    float gBand = floor(stageM.y * 2.5 + floor(t * 15.0));
+    float gTrig = step(1.0 - uGlitch * 0.45, hash11(gBand * 5.1 + floor(t * 18.0)));
+    stageM.x += (hash11(gBand) - 0.5) * 1.4 * uGlitch * gTrig;
+    r = length(stageM);
+    ang = atan(stageM.y, stageM.x);
+  }
+
+  vec3 col = vec3(0.0);
+
+  // Carbon micro-grid on floor
+  if (uWeave > 0.01) {
+    vec2 dg = vec2(stageM.x + stageM.y, stageM.x - stageM.y) * 1.4;
+    float cg = smoothstep(0.07, 0.0, abs(fract(dg.x) - 0.5)) + smoothstep(0.07, 0.0, abs(fract(dg.y) - 0.5));
+    col += vec3(0.32, 0.38, 0.46) * cg * 0.25 * uWeave * exp(-r * 0.14);
+  }
+
+  if (uScene == 0) {
+    // Ch.1 (P12-P13): Single Line + Solo Rotating Axis (R=1.5m) + 5-Dancer Circle (R=3.2m)
+    float rotAng = t * 0.9;
+    vec2 rotP = vec2(stageM.x * cos(rotAng) - stageM.y * sin(rotAng), stageM.x * sin(rotAng) + stageM.y * cos(rotAng));
+    float axisLine = exp(-abs(rotP.y) * 14.0) * smoothstep(5.5, 1.2, abs(rotP.x));
+    float ringSolo = exp(-abs(r - 1.5) * 16.0);
+    float ring5 = exp(-abs(r - 3.2) * 14.0) * (0.5 + 0.5 * cos(ang * 5.0 - t * 2.4));
+    col += vec3(0.90, 0.95, 1.0) * (axisLine * 1.3 + ringSolo * 1.1 + ring5 * 1.1);
+  } else if (uScene == 1) {
+    // Ch.2 (P14): Parallel & Staggered dancer lanes across floor
+    float lane = abs(fract(stageM.y * 0.65) - 0.5);
+    float stag = sin(stageM.x * 1.4 + floor(stageM.y * 0.65) * 3.14159 - t * 2.6);
+    float lGlow = exp(-lane * 22.0) * smoothstep(-0.2, 0.7, stag) * exp(-r * 0.11);
+    col += vec3(0.84, 0.90, 0.98) * lGlow * 1.25;
+  } else if (uScene == 2) {
+    // Ch.3 (P15): Orange light & shadow + Lines weaving from sides/back through dancer formation
+    float orangePool = exp(-r * r * 0.08) * (0.65 + 0.35 * sin(t * 2.0));
+    col += vec3(1.0, 0.35, 0.05) * orangePool * uOrange * 0.9;
+    for (float i = -5.0; i <= 5.0; i += 1.0) {
+      float curveX = i * 0.85 + 0.45 * sin(stageM.y * 0.55 - t * 2.2 + i);
+      float d = abs(stageM.x - curveX);
+      vec3 lCol = mix(vec3(0.92, 0.95, 1.0), vec3(1.0, 0.45, 0.10), uOrange * (0.5 + 0.5 * sin(i + t)));
+      col += lCol * exp(-d * 18.0) * exp(-r * 0.10) * 0.75;
+    }
+  } else if (uScene == 3) {
+    // Ch.4 (P16): Orange Glitch Array on floor
+    float gx = exp(-abs(fract(stageM.x * 1.2) - 0.5) * 28.0);
+    float gy = exp(-abs(fract(stageM.y * 1.2) - 0.5) * 28.0);
+    float cell = hash21(floor(stageM * 1.2) + floor(t * 14.0));
+    vec3 gCol = mix(vec3(0.85, 0.92, 1.0), vec3(1.0, 0.42, 0.08), uOrange * 0.8);
+    col += gCol * (gx + gy) * (0.35 + 0.95 * step(0.62, cell)) * exp(-r * 0.10);
+  } else if (uScene == 4) {
+    // Ch.5 (P17-P18): Ordered Intersecting Z-Shaped Floor Formation + Grid
+    vec2 zp = stageM / 3.8;
+    float topB = max(abs(zp.y - 0.75), max(abs(zp.x) - 0.85, 0.0));
+    float botB = max(abs(zp.y + 0.75), max(abs(zp.x) - 0.85, 0.0));
+    float diagB = max(abs(zp.y - zp.x * 0.88), max(abs(zp.x) - 0.85, 0.0));
+    float dZ = min(min(topB, botB), diagB);
+    float zFloor = exp(-dZ * 26.0) + 0.35 * exp(-dZ * 6.0);
+    float tetherWave = exp(-abs(r - mod(t * 2.8, 5.5)) * 12.0) * (1.0 - mod(t * 2.8, 5.5) / 5.5);
+    col += mix(vec3(0.90, 0.95, 1.0), vec3(1.0, 0.46, 0.12), uOrange * 0.75) * (zFloor * 1.3 + tetherWave * 0.9);
+  } else {
+    // Ch.6 (P19-P21): Sequence-based circular formation mimicking tire rotation + Diagonal Beam
+    float ringR = exp(-abs(r - 3.2) * 6.0) + 0.6 * exp(-abs(r - 4.6) * 8.0);
+    float tireSeq = pow(max(0.0, cos(ang * 12.0 - t * 5.0 + r * 0.8)), 4.0);
+    col += mix(vec3(0.70, 0.88, 1.0), vec3(1.0, 0.45, 0.12), uOrange * 0.65) * ringR * (0.25 + 1.1 * tireSeq);
+    // Diagonal beam on floor
+    float dBeam = abs(stageM.y - stageM.x * 0.58 - 0.4 * sin(t));
+    col += vec3(0.20, 0.75, 1.0) * exp(-dBeam * 3.5) * 0.45 + vec3(0.95, 0.99, 1.0) * exp(-dBeam * 22.0) * 1.3;
+  }
+
+  // Mask floor to the V-wall diamond stage boundary:
+  // In stage coordinates: V-wall is at Y = 8.02 + max(0, |X - 15| - 1.015)
+  float xWorld = 15.0 - stageM.x;
+  float yWorld = 13.6 - stageM.y;
+  float dx = abs(xWorld - 15.0);
+  float wallY = dx <= 1.015 ? 8.02 : 8.02 + (dx - 1.015);
+  float inStage = smoothstep(wallY - 0.15, wallY + 0.25, yWorld) * smoothstep(26.37 - dx + 0.15, 26.37 - dx - 0.25, yWorld);
+  col *= inStage;
+
+  if (uCalGrid > 0.01) {
+    float gx = smoothstep(0.04, 0.0, abs(fract(xWorld) - 0.5));
+    float gy = smoothstep(0.04, 0.0, abs(fract(yWorld) - 0.5));
+    float r32 = smoothstep(0.06, 0.0, abs(r - 3.2));
+    float wallEdge = smoothstep(0.18, 0.0, abs(yWorld - wallY));
+    col = mix(col, max(col, vec3(0.12, 0.42, 0.55) * max(gx, gy) + vec3(0.0, 0.9, 1.0) * r32 + vec3(1.0, 0.45, 0.1) * wallEdge), uCalGrid);
+  }
+
+  col *= uExposure;
+  col = col / (1.0 + col * 0.65);
+  return col;
+}
+
+void main() {
+  vec2 uv = gl_FragCoord.xy / uRes;
+  vec3 c = (uTarget == 0) ? renderWall(uv) : renderFloor(uv);
+  fragColor = vec4(c, 1.0);
+}`;
+
+// Shader for Composite View: Split / Wall / Floor / 3D SketchUp Stage Raycaster
+const FS_PRESENT = `#version 300 es
+precision highp float;
+out vec4 fragColor;
+uniform vec2 uRes;
+uniform sampler2D uTexWall;
+uniform sampler2D uTexFloor;
+uniform int uViewMode; // 0=split, 1=wall, 2=floor, 3=stage3d
+uniform float uBlackout;
+uniform vec3 uCamOrbit; // (yaw, pitch, dist)
+
+// Raycast the exact SketchUp V-wall + Stage Floor + Central Canopy + 4 Foreground Slanted Columns
+// SketchUp coords: X in [0..30] (center 15), Y in [6..30] (V-apex at Y=8.02), Z in [0..9] (up)
+vec3 renderStage3D(vec2 uv, float aspect) {
+  vec2 ndc = (uv * 2.0 - 1.0) * vec2(aspect, 1.0);
+  float yaw = uCamOrbit.x;
+  float pitch = uCamOrbit.y;
+  float dist = uCamOrbit.z;
+
+  vec3 target = vec3(15.0, 13.5, 2.3);
+  vec3 ro = target + vec3(sin(yaw) * cos(pitch), cos(yaw) * cos(pitch), sin(pitch)) * dist;
+  vec3 fwd = normalize(target - ro);
+  vec3 right = normalize(cross(fwd, vec3(0.0, 0.0, 1.0)));
+  vec3 up = cross(right, fwd);
+  vec3 rd = normalize(fwd * 1.45 + ndc.x * right + ndc.y * up);
+
+  float tMin = 1e9;
+  int hitType = 0; // 1 = floor, 2 = V-wall, 3 = canopy/column structure
+  vec3 hitPos = vec3(0.0);
+  vec3 hitNrm = vec3(0.0, 0.0, 1.0);
+
+  // 1. Floor plane z = 0
+  if (rd.z < -1e-4) {
+    float tf = -ro.z / rd.z;
+    if (tf > 0.1 && tf < tMin) {
+      vec3 p = ro + rd * tf;
+      float dx = abs(p.x - 15.0);
+      float wallY = dx <= 1.015 ? 8.02 : 8.02 + (dx - 1.015);
+      if (p.y >= wallY - 0.1 && (dx + abs(p.y - 14.21)) <= 12.16) {
+        tMin = tf; hitType = 1; hitPos = p; hitNrm = vec3(0.0, 0.0, 1.0);
+      }
+    }
+  }
+
+  // 2. V-Wall (3 segments: Right wall x+y=21.995, Center apex y=8.02, Left wall -x+y=-8.005, z in [0..6])
+  // Right wall normal: normalize(vec3(1.0, 1.0, 0.0))
+  vec2 segA[3]; vec2 segB[3];
+  segA[0] = vec2(5.28, 16.72); segB[0] = vec2(13.99, 8.02);
+  segA[1] = vec2(13.99, 8.02); segB[1] = vec2(16.02, 8.02);
+  segA[2] = vec2(16.02, 8.02); segB[2] = vec2(24.72, 16.72);
+  float cumS[4]; cumS[0] = 0.57; cumS[1] = 12.881; cumS[2] = 14.911; cumS[3] = 27.214;
+
+  float hitWallS = 0.0;
+  for (int i = 0; i < 3; i++) {
+    vec2 a = segA[i], b = segB[i];
+    vec2 ab = b - a;
+    vec2 n2 = normalize(vec2(-ab.y, ab.x));
+    float denom = dot(rd.xy, n2);
+    if (abs(denom) > 1e-5) {
+      float tw = dot(a - ro.xy, n2) / denom;
+      if (tw > 0.1 && tw < tMin) {
+        vec3 p = ro + rd * tw;
+        float uSeg = dot(p.xy - a, ab) / dot(ab, ab);
+        if (uSeg >= 0.0 && uSeg <= 1.0 && p.z >= 0.0 && p.z <= 6.0) {
+          tMin = tw; hitType = 2; hitPos = p;
+          hitNrm = vec3(n2, 0.0);
+          hitWallS = mix(cumS[i], cumS[i+1], uSeg);
+        }
+      }
+    }
+  }
+
+  // 3. Central Square Hanging Canopy Box (rotated 45 deg diamond at center (15, 17.61), radius 4.95m, Z in [5.01..6.6])
+  // Check slab planes
+  for (int side = 0; side < 4; side++) {
+    vec2 cn = (side == 0) ? vec2(0.7071, 0.7071) : (side == 1) ? vec2(-0.7071, 0.7071) : (side == 2) ? vec2(0.7071, -0.7071) : vec2(-0.7071, -0.7071);
+    float d0 = 3.5;
+    float denom = dot(rd.xy, cn);
+    if (abs(denom) > 1e-5) {
+      float tc = (d0 - dot(ro.xy - vec2(15.0, 17.61), cn)) / denom;
+      if (tc > 0.1 && tc < tMin) {
+        vec3 p = ro + rd * tc;
+        vec2 rel = p.xy - vec2(15.0, 17.61);
+        float ortho = abs(dot(rel, vec2(-cn.y, cn.x)));
+        if (ortho <= 3.5 && p.z >= 5.01 && p.z <= 6.4) {
+          tMin = tc; hitType = 3; hitPos = p; hitNrm = vec3(cn, 0.0);
+        }
+      }
+    }
+  }
+
+  vec3 col = vec3(0.015, 0.018, 0.024);
+  if (hitType == 2) {
+    // Sample Projector #1 (WALL_COMBINED)
+    vec2 wallUV = vec2(1.0 - hitWallS / 27.784, hitPos.z / 6.0);
+    vec3 projCol = texture(uTexWall, clamp(wallUV, 0.0, 1.0)).rgb;
+    col = vec3(0.03, 0.035, 0.045) + projCol * 1.15;
+  } else if (hitType == 1) {
+    // Sample Projector #2 (FLOOR_STAGE)
+    vec2 floorUV = vec2(1.0 - (hitPos.x - 6.0) / 18.0, 1.0 - (hitPos.y - 8.02) / 11.25);
+    vec3 projCol = vec3(0.0);
+    if (floorUV.x >= 0.0 && floorUV.x <= 1.0 && floorUV.y >= 0.0 && floorUV.y <= 1.0) {
+      projCol = texture(uTexFloor, floorUV).rgb;
+    }
+    // Subtle floor reflection of the V-wall
+    vec2 reflUV = vec2(1.0 - clamp((hitPos.x - 4.71) / 20.58, 0.0, 1.0), 0.18);
+    vec3 refl = texture(uTexWall, reflUV).rgb * 0.15 * exp(-abs(hitPos.y - 12.5) * 0.18);
+    col = vec3(0.018, 0.02, 0.026) + projCol * 1.1 + refl;
+  } else if (hitType == 3) {
+    float l = 0.35 + 0.45 * abs(dot(hitNrm, normalize(vec3(0.4, 0.7, 0.6))));
+    col = vec3(0.09, 0.10, 0.13) * l;
+  }
+  return col;
+}
+
+void main() {
+  vec2 uv = gl_FragCoord.xy / uRes;
+  vec3 outCol = vec3(0.0);
+
+  float fullAspect = uRes.x / max(uRes.y, 1.0);
+  if (uViewMode == 1) {
+    outCol = texture(uTexWall, uv).rgb;
+  } else if (uViewMode == 2) {
+    outCol = texture(uTexFloor, uv).rgb;
+  } else if (uViewMode == 3) {
+    outCol = renderStage3D(uv, fullAspect);
+  } else {
+    // SPLIT view: Left 46% width = Top Wall + Bottom Floor; Right 54% width = 3D Stage Simulation
+    if (uv.x < 0.46) {
+      vec2 subUV = vec2(uv.x / 0.46, fract(uv.y * 2.0));
+      if (uv.y >= 0.5) {
+        outCol = texture(uTexWall, subUV).rgb;
+      } else {
+        outCol = texture(uTexFloor, subUV).rgb;
+      }
+      if (abs(uv.y - 0.5) < 0.002) outCol = vec3(0.25, 0.3, 0.38);
+    } else {
+      vec2 rightUV = vec2((uv.x - 0.46) / 0.54, uv.y);
+      outCol = renderStage3D(rightUV, fullAspect * 0.54);
+      if (abs(uv.x - 0.46) < 0.0015) outCol = vec3(0.25, 0.3, 0.38);
+    }
+  }
+
+  outCol *= (1.0 - uBlackout);
+  fragColor = vec4(outCol, 1.0);
+}`;
+
+function compileProgram(vsSrc, fsSrc) {
+  const vs = gl.createShader(gl.VERTEX_SHADER);
+  gl.shaderSource(vs, vsSrc); gl.compileShader(vs);
+  if (!gl.getShaderParameter(vs, gl.COMPILE_STATUS)) console.error(gl.getShaderInfoLog(vs));
+  const fs = gl.createShader(gl.FRAGMENT_SHADER);
+  gl.shaderSource(fs, fsSrc); gl.compileShader(fs);
+  if (!gl.getShaderParameter(fs, gl.COMPILE_STATUS)) console.error(gl.getShaderInfoLog(fs));
+  const prog = gl.createProgram();
+  gl.attachShader(prog, vs); gl.attachShader(prog, fs); gl.linkProgram(prog);
+  if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) console.error(gl.getProgramInfoLog(prog));
+  return prog;
+}
+
+const progCanvas = compileProgram(VS_QUAD, FS_CANVAS);
+const progPresent = compileProgram(VS_QUAD, FS_PRESENT);
+const emptyVao = gl.createVertexArray();
+
+function createFBO(w, h) {
+  const tex = gl.createTexture();
+  gl.bindTexture(gl.TEXTURE_2D, tex);
+  gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA8, w, h, 0, gl.RGBA, gl.UNSIGNED_BYTE, null);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+  const fbo = gl.createFramebuffer();
+  gl.bindFramebuffer(gl.FRAMEBUFFER, fbo);
+  gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, tex, 0);
+  gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+  return { fbo, tex, w, h };
+}
+
+const fboWall = createFBO(1920, 1080);
+const fboFloor = createFBO(1920, 1080);
+
+function resize() {
+  const dpr = Math.min(window.devicePixelRatio || 1, 2);
+  canvas.width = Math.floor(window.innerWidth * dpr);
+  canvas.height = Math.floor(window.innerHeight * dpr);
+  document.getElementById("hudRes").textContent = `${canvas.width}×${canvas.height}`;
+}
+window.addEventListener("resize", resize);
+resize();
+
+// Orbit mouse interaction for 3D stage view
+let dragging = false, lastX = 0, lastY = 0;
+canvas.addEventListener("mousedown", (e) => { dragging = true; lastX = e.clientX; lastY = e.clientY; });
+window.addEventListener("mouseup", () => { dragging = false; });
+window.addEventListener("mousemove", (e) => {
+  if (!dragging) return;
+  const dx = e.clientX - lastX, dy = e.clientY - lastY;
+  lastX = e.clientX; lastY = e.clientY;
+  targetState.orbitYaw = Math.max(-1.2, Math.min(1.2, targetState.orbitYaw - dx * 0.005));
+  targetState.orbitPitch = Math.max(0.05, Math.min(1.15, targetState.orbitPitch + dy * 0.005));
+});
+canvas.addEventListener("wheel", (e) => {
+  targetState.orbitDist = Math.max(10.0, Math.min(36.0, targetState.orbitDist + e.deltaY * 0.015));
+}, { passive: true });
+
+// Keyboard controls
+window.addEventListener("keydown", (e) => {
+  if (e.key >= "1" && e.key <= "6") {
+    applyScenePreset(parseInt(e.key, 10) - 1);
+  } else if (e.key === "v" || e.key === "V") {
+    const idx = (VIEW_MODES.indexOf(state.view) + 1) % VIEW_MODES.length;
+    state.view = VIEW_MODES[idx];
+    updateHud();
+    broadcastState();
+  } else if (e.key === "g" || e.key === "G") {
+    targetState.calGrid = targetState.calGrid > 0.5 ? 0.0 : 1.0;
+    broadcastState();
+  } else if (e.key === "h" || e.key === "H") {
+    document.getElementById("hud").classList.toggle("hidden");
+    updateHud();
+  } else if (e.key === "f" || e.key === "F") {
+    if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+    else document.exitFullscreen();
+  } else if (e.key === "c" || e.key === "C") {
+    window.open("/control.html", "_blank");
+  }
+});
+
+let lastTime = performance.now(), simTime = 0, frames = 0, fpsTimer = performance.now(), autoTimer = 0;
+
+function renderFrame(now) {
+  const dt = Math.min(0.05, (now - lastTime) * 0.001);
+  lastTime = now;
+  frames++;
+  if (now - fpsTimer >= 500) {
+    document.getElementById("hudFps").textContent = Math.round((frames * 1000) / (now - fpsTimer));
+    frames = 0; fpsTimer = now;
+  }
+
+  // 0.2s exponential smoothing
+  const alpha = 1.0 - Math.exp(-dt * 15.0);
+  for (const k of ["orange", "glitch", "density", "speed", "weave", "exposure", "calGrid", "occluderMask", "blackout", "orbitYaw", "orbitPitch", "orbitDist"]) {
+    state[k] += (targetState[k] - state[k]) * alpha;
+  }
+
+  simTime += dt * state.speed;
+  if (state.autoCycle) {
+    autoTimer += dt;
+    if (autoTimer > 8.0) { autoTimer = 0; applyScenePreset(state.scene + 1); }
+  }
+
+  gl.bindVertexArray(emptyVao);
+  gl.useProgram(progCanvas);
+  gl.uniform1f(gl.getUniformLocation(progCanvas, "uTime"), simTime);
+  gl.uniform1i(gl.getUniformLocation(progCanvas, "uScene"), state.scene);
+  gl.uniform1f(gl.getUniformLocation(progCanvas, "uOrange"), state.orange);
+  gl.uniform1f(gl.getUniformLocation(progCanvas, "uGlitch"), state.glitch);
+  gl.uniform1f(gl.getUniformLocation(progCanvas, "uDensity"), state.density);
+  gl.uniform1f(gl.getUniformLocation(progCanvas, "uWeave"), state.weave);
+  gl.uniform1f(gl.getUniformLocation(progCanvas, "uExposure"), state.exposure);
+  gl.uniform1f(gl.getUniformLocation(progCanvas, "uCalGrid"), state.calGrid);
+  gl.uniform1f(gl.getUniformLocation(progCanvas, "uOccMask"), state.occluderMask);
+
+  // Pass 1: Render Combined Two-Wall Canvas (Projector #1)
+  gl.bindFramebuffer(gl.FRAMEBUFFER, fboWall.fbo);
+  gl.viewport(0, 0, fboWall.w, fboWall.h);
+  gl.uniform2f(gl.getUniformLocation(progCanvas, "uRes"), fboWall.w, fboWall.h);
+  gl.uniform1i(gl.getUniformLocation(progCanvas, "uTarget"), 0);
+  gl.drawArrays(gl.TRIANGLES, 0, 3);
+
+  // Pass 2: Render Stage Floor Canvas (Projector #2)
+  gl.bindFramebuffer(gl.FRAMEBUFFER, fboFloor.fbo);
+  gl.viewport(0, 0, fboFloor.w, fboFloor.h);
+  gl.uniform2f(gl.getUniformLocation(progCanvas, "uRes"), fboFloor.w, fboFloor.h);
+  gl.uniform1i(gl.getUniformLocation(progCanvas, "uTarget"), 1);
+  gl.drawArrays(gl.TRIANGLES, 0, 3);
+
+  // Pass 3: Present onto screen
+  gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+  gl.viewport(0, 0, canvas.width, canvas.height);
+  gl.useProgram(progPresent);
+  gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, fboWall.tex);
+  gl.uniform1i(gl.getUniformLocation(progPresent, "uTexWall"), 0);
+  gl.activeTexture(gl.TEXTURE1); gl.bindTexture(gl.TEXTURE_2D, fboFloor.tex);
+  gl.uniform1i(gl.getUniformLocation(progPresent, "uTexFloor"), 1);
+  gl.uniform2f(gl.getUniformLocation(progPresent, "uRes"), canvas.width, canvas.height);
+  gl.uniform1i(gl.getUniformLocation(progPresent, "uViewMode"), VIEW_MODES.indexOf(state.view));
+  gl.uniform1f(gl.getUniformLocation(progPresent, "uBlackout"), state.blackout);
+  gl.uniform3f(gl.getUniformLocation(progPresent, "uCamOrbit"), state.orbitYaw, state.orbitPitch, state.orbitDist);
+  gl.drawArrays(gl.TRIANGLES, 0, 3);
+
+  requestAnimationFrame(renderFrame);
+}
+requestAnimationFrame(renderFrame);
+</script>
+</body>
+</html>

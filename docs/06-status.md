@@ -86,3 +86,15 @@ Not verified: browser/GPU live visuals, TouchDesigner runtime, on-site calibrati
 2026-11-12：通过 SketchUp 26.2.243 原生 Ruby API 在方案 C 副本中新增俯视机位、空间机位、墙面覆盖三个 Scenes，以及机位/高度/参数标注和分类 Tags。原模型及原六个 Scenes 保留。输出：E:/Codex/workspace/2026-11-12/n-x20/outputs/场景1-方案C-机位与视图.skp，默认俯视。用户随后明确要求后台运行，已关闭本次启动的 SketchUp 进程，此后只用无窗口 C API 调整标注对比度并保存、重新打开验证成功。原生 PNG 导出早于文字对比度调整，不代表最终标注颜色；最终 SKP 为浅色标注配原深色样式。未重新计算光路或现场验收，机位仍为历史方案 C。
 
 2026-11-12: Used the native SketchUp 26.2.243 Ruby API to add three scenes (top layout, spatial layout and wall coverage), projector/height/parameter annotations and categorized tags to a copy of plan C. Preserved the source model and its six original scenes. Output: E:/Codex/workspace/2026-11-12/n-x20/outputs/场景1-方案C-机位与视图.skp, opening on the top view. After the user explicitly required background-only work, closed the launched SketchUp process; subsequent contrast edits, saving and successful reopen validation used only the windowless C API. Native PNG exports precede the annotation contrast adjustment; the final SKP uses light annotations with the original dark style. No optical recalculation or on-site validation; positions remain historical plan C.
+
+## 2026-11-14 新增进度：项目【场景一：墙面与地面 Projection (Scene 1 Wall & Floor Projection)】
+
+- **项目名称标注**：已统一标注为 **【场景一：墙面与地面 Projection（Scene 1 Wall & Floor Projection）】**，对应目录与工程文件：
+  - 本地归档目录：`D:\Kuanfuweimu\2-Commission\VJ Commission\DENZA 2\2026-11_DENZA Z\01_场景1_墙面双投影\场景1_墙面与地面_Projection\`（同步保留于 `墙地双投方案_1114\` 与 `DENZA N\td_wall_floor_pops\`）
+  - GitHub 仓库直览目录：`quickstart/场景1_墙面与地面_Projection/`（同步保留于 `quickstart/projection-wall-floor-TD/`）
+  - TouchDesigner 工程文件：`场景1_墙面与地面_Projection.toe`（同步含 `DENZA_Z_WallFloor_Mapping_POPs.toe` 与 `scene1.toe`）
+- **11/13《Z dance concept:break down》PDF（21页）完整归档**：已存入 `DENZA 2\2026-11_DENZA Z\00_项目资料\客户方案\1113_Z_dance_concept_breakdown.pdf`、`00_项目资料\舞蹈分镜拆解_1113\` 及仓库 `quickstart/dance-concept-1113/`（含 21 张逐页 PNG、联系表、提取文本与设计说明）。
+- **【场景一：墙面与地面 Projection】几何提取与光路计算**：从 `DENZA N\腾势空间结构.skp` 提取双墙合并网格 (`wall_combined.obj`)、菱形舞台地面 (`floor_stage.obj`)、悬吊方盒 (`occluder.obj`) 与前景4斜柱 (`columns_fg.obj`)，生成对位网格图与 `coverage_wall_floor_plan.png`。
+- **【场景一：墙面与地面 Projection】TouchDesigner 实机对位与原生 POPs 工程**：完成 `td_build_all.py`、`td_build_wall_floor_mapping.py` 与 `td_build_z_dance_pops.py`（100% 原生 POPs、零 SOP、Null 算子 `#2F59AD`、POPs Annotate 框 SOP 蓝色），并已通过 TDMCP 在运行中的 **TouchDesigner 2025.32460** 实例内实时生成、校验并保存为 `场景1_墙面与地面_Projection.toe`、`DENZA_Z_WallFloor_Mapping_POPs.toe` 与 `scene1.toe`（`par_fail: []`，全网 `get_errors: 0`；实机渲染截图已归档于 `td_live_previews/`）。
+- **【场景一：墙面与地面 Projection】WebGL2 实时墙地双投系统与 4K60 母带 (`DENZA N\strings-z-dance` & `code/strings-z-dance`)**：实现 11/13 PDF 全部 6 大舞蹈章节，并完成 3 条 `3840×2160 @ 60fps` 30 秒母带渲染（已打包入 Release `denza-assets-13.zip`）。
+- **Z-LINE 直线折角版（`DENZA N\strings-space\zline.html`）**：线条改为直线段+折角，节点弹簧回弹、拉长时细丝散开、长度突变时弹拨振动。墙面按"两面90°墙=一个画面"出 2:1 2560×1280（折角在中线），地面 1:1 2048×2048；9 个场景对应 11/13 PDF。

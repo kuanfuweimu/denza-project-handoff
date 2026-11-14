@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DENZA Z · 舞蹈视觉与墙地双投控台 (Control Panel)</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; padding: 20px; background: #0a0c10; color: #e4eaf4;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  }
+  h1 { font-size: 18px; margin: 0 0 6px; color: #fff; }
+  .sub { font-size: 12px; color: #8c98ad; margin-bottom: 18px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 16px; }
+  .panel {
+    background: #12151e; border: 1px solid #222838; border-radius: 8px; padding: 14px 16px;
+  }
+  .panel h2 { font-size: 13px; text-transform: uppercase; letter-spacing: 0.05em; color: #9ab0d0; margin: 0 0 12px; }
+  .scene-btn, .view-btn {
+    display: block; width: 100%; text-align: left; padding: 10px 12px; margin-bottom: 8px;
+    background: #181c28; border: 1px solid #2a3144; border-radius: 6px; color: #dce4f2;
+    cursor: pointer; font-size: 13px; transition: all 0.2s ease;
+  }
+  .scene-btn:hover, .view-btn:hover { background: #202636; border-color: #3d4866; }
+  .scene-btn.active { background: #2b1d16; border-color: #ff6e26; color: #fff; font-weight: 600; }
+  .view-btn.active { background: #142834; border-color: #26d8ff; color: #fff; font-weight: 600; }
+  .slider-row { margin-bottom: 12px; }
+  .slider-head { display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 4px; color: #b8c4d8; }
+  input[type="range"] { width: 100%; accent-color: #ff6e26; }
+  .toggle-row { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+  .pill {
+    padding: 7px 12px; border-radius: 5px; background: #1a2030; border: 1px solid #2e3850;
+    color: #d0dcf0; font-size: 12px; cursor: pointer;
+  }
+  .pill.on { background: #ff6e26; border-color: #ff8547; color: #fff; font-weight: 600; }
+</style>
+</head>
+<body>
+  <h1>DENZA Z · 11/13 舞蹈拆解视觉与「一机双墙 + 一机地面」控台</h1>
+  <div class="sub">同源 BroadcastChannel 实时同步 · 支持切换 6 幕舞蹈视觉、双投影独立输出与 SketchUp 3D 现场预览</div>
+
+  <div class="grid">
+    <div class="panel">
+      <h2>1. 舞蹈分镜章节 (11/13 Dance Concept Breakdown)</h2>
+      <div id="sceneList"></div>
+      <div class="toggle-row">
+        <button class="pill" id="btnAuto">自动轮播 (Auto)</button>
+        <button class="pill" id="btnGrid">显示墙地校准网格 (Grid)</button>
+        <button class="pill on" id="btnMask">中庭顶框遮挡保护 (Top Mask)</button>
+        <button class="pill" id="btnBlack">黑场 (Blackout)</button>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>2. 投影输出与 3D 舞台监看模式</h2>
+      <div id="viewList"></div>
+      <div style="font-size:12px; color:#8c98ad; line-height:1.6; margin-top:10px;">
+        • <b>双墙合投窗口</b>：<a href="/?view=wall" target="_blank" style="color:#ff8547">/?view=wall</a>（送投影机 #1）<br>
+        • <b>地面独投窗口</b>：<a href="/?view=floor" target="_blank" style="color:#26d8ff">/?view=floor</a>（送投影机 #2）<br>
+        • <b>3D 舞台模拟</b>：<a href="/?view=stage3d" target="_blank" style="color:#ffd166">/?view=stage3d</a>
+      </div>
+    </div>
+
+    <div class="panel">
+      <h2>3. 实时视觉参数调节 (0.2s 平滑过渡)</h2>
+      <div id="sliders"></div>
+    </div>
+  </div>
+
+<script>
+const SCENES = [
+  "Ch.1 单线握持 · 轴向旋转与圆环对接 (P12–P13)",
+  "Ch.2 碳纤维致密编织 · 平行/交错张力线阵 (P3, P14)",
+  "Ch.3 腾势橙光影引入 · Push/Pull 穿插织网 (P10, P15)",
+  "Ch.4 橙光故障线阵 · Orange Light & Glitch (P16)",
+  "Ch.5 Z字交错几何构图 · 威亚网格墙空间 (P17–P18)",
+  "Ch.6 轮胎滚动序列波 · 破雾光刃与终章爆发 (P19–P21)"
+];
+const VIEWS = [
+  { key: "split", label: "SPLIT 四分屏总览（左：双墙+地面 | 右：3D 舞台模拟）" },
+  { key: "wall", label: "WALL 投影机 #1 全屏（左右两面折墙拼成单一画面）" },
+  { key: "floor", label: "FLOOR 投影机 #2 全屏（舞台地面单独画面）" },
+  { key: "stage3d", label: "STAGE 3D SketchUp 现场双投影模拟全屏" }
+];
+const SLIDERS = [
+  { key: "orange", label: "腾势橙光影强度 (Orange Light · P15/P16)", min: 0, max: 1, step: 0.01, val: 0.05 },
+  { key: "glitch", label: "Glitch 故障美学切分度 (Glitch · P16)", min: 0, max: 1, step: 0.01, val: 0.0 },
+  { key: "density", label: "线条阵列密度 (Line Density)", min: 0.1, max: 1, step: 0.01, val: 0.5 },
+  { key: "weave", label: "碳纤维交错编织度 (Carbon Weave · P3)", min: 0, max: 1, step: 0.01, val: 0.25 },
+  { key: "speed", label: "穿插/序列运动速度 (Motion Speed)", min: 0.1, max: 2.5, step: 0.05, val: 1.0 },
+  { key: "exposure", label: "总曝光亮度 (Exposure)", min: 0.3, max: 2.2, step: 0.05, val: 1.15 },
+  { key: "orbitYaw", label: "3D 舞台预览水平环绕角 (Orbit Yaw)", min: -1.1, max: 1.1, step: 0.02, val: 0.0 },
+  { key: "orbitPitch", label: "3D 舞台预览俯仰角 (Orbit Pitch)", min: 0.05, max: 1.1, step: 0.02, val: 0.28 },
+  { key: "orbitDist", label: "3D 舞台预览机位距离 (Distance m)", min: 10, max: 34, step: 0.5, val: 23.5 }
+];
+
+const bc = new BroadcastChannel("strings_z_dance");
+let curScene = 0, curView = "split", calGrid = 0, occMask = 1, blackout = 0, autoCycle = false;
+
+const sceneList = document.getElementById("sceneList");
+SCENES.forEach((name, i) => {
+  const b = document.createElement("button");
+  b.className = "scene-btn" + (i === 0 ? " active" : "");
+  b.textContent = name;
+  b.onclick = () => bc.postMessage({ scene: i });
+  sceneList.appendChild(b);
+});
+
+const viewList = document.getElementById("viewList");
+VIEWS.forEach((v) => {
+  const b = document.createElement("button");
+  b.className = "view-btn" + (v.key === curView ? " active" : "");
+  b.dataset.view = v.key;
+  b.textContent = v.label;
+  b.onclick = () => bc.postMessage({ view: v.key });
+  viewList.appendChild(b);
+});
+
+const slidersDiv = document.getElementById("sliders");
+SLIDERS.forEach((s) => {
+  const row = document.createElement("div");
+  row.className = "slider-row";
+  row.innerHTML = `<div class="slider-head"><span>${s.label}</span><span id="val_${s.key}">${s.val}</span></div>
+                   <input type="range" id="rng_${s.key}" min="${s.min}" max="${s.max}" step="${s.step}" value="${s.val}">`;
+  slidersDiv.appendChild(row);
+  const inp = row.querySelector("input");
+  inp.oninput = () => {
+    document.getElementById(`val_${s.key}`).textContent = inp.value;
+    bc.postMessage({ [s.key]: parseFloat(inp.value) });
+  };
+});
+
+document.getElementById("btnAuto").onclick = () => { autoCycle = !autoCycle; bc.postMessage({ autoCycle }); syncButtons(); };
+document.getElementById("btnGrid").onclick = () => { calGrid = calGrid > 0.5 ? 0 : 1; bc.postMessage({ calGrid }); syncButtons(); };
+document.getElementById("btnMask").onclick = () => { occMask = occMask > 0.5 ? 0 : 1; bc.postMessage({ occluderMask: occMask }); syncButtons(); };
+document.getElementById("btnBlack").onclick = () => { blackout = blackout > 0.5 ? 0 : 1; bc.postMessage({ blackout }); syncButtons(); };
+
+function syncButtons() {
+  document.getElementById("btnAuto").classList.toggle("on", autoCycle);
+  document.getElementById("btnGrid").classList.toggle("on", calGrid > 0.5);
+  document.getElementById("btnMask").classList.toggle("on", occMask > 0.5);
+  document.getElementById("btnBlack").classList.toggle("on", blackout > 0.5);
+  [...sceneList.children].forEach((b, i) => b.classList.toggle("active", i === curScene));
+  [...viewList.children].forEach((b) => b.classList.toggle("active", b.dataset.view === curView));
+}
+
+bc.onmessage = (ev) => {
+  const d = ev.data || {};
+  if (d.type === "state") {
+    curScene = d.scene; curView = d.view;
+    calGrid = d.calGrid; occMask = d.occluderMask; blackout = d.blackout; autoCycle = d.autoCycle;
+    SLIDERS.forEach((s) => {
+      if (typeof d[s.key] === "number") {
+        const inp = document.getElementById(`rng_${s.key}`);
+        if (inp) inp.value = d[s.key];
+        const vl = document.getElementById(`val_${s.key}`);
+        if (vl) vl.textContent = Number(d[s.key]).toFixed(2);
+      }
+    });
+    syncButtons();
+  }
+};
+bc.postMessage({ cmd: "ping" });
+</script>
+</body>
+</html>

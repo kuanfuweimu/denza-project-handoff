@@ -1,6 +1,11 @@
 # DENZA Z · 项目接管入口
 
-更新：2026-11-12（Asia/Shanghai）。这是三场景制作、投影沟通、参考资料和生成视觉的**私有完整交接仓库**。原件和已输出视频保持不变。
+更新：2026-11-14（Asia/Shanghai）。这是三场景制作、投影沟通、参考资料和生成视觉的**完整交接仓库**。原件和已输出视频保持不变。
+
+**2026-11-14 核心更新（项目名称：【场景一：墙面与地面 Projection / Scene 1 Wall & Floor Projection】）**：
+- **【场景一：墙面与地面 Projection】TouchDesigner 实机工程与 3D 资产**：见 [quickstart/场景1_墙面与地面_Projection](quickstart/场景1_墙面与地面_Projection/README.md)（同路径同步于 [quickstart/projection-wall-floor-TD](quickstart/projection-wall-floor-TD/README.md)；含已在 TouchDesigner 2025.32460 实机生成并零报错验证的 `场景1_墙面与地面_Projection.toe` / `DENZA_Z_WallFloor_Mapping_POPs.toe` / `scene1.toe`、100% 原生 POPs 视觉生成器、墙地 3D 对位光路模拟、SketchUp 实测提取 OBJ 网格与 UV 校准图）。
+- **11/13《Z dance concept:break down》（21页）拆解归档**：见 [quickstart/dance-concept-1113](quickstart/dance-concept-1113/舞蹈分镜与墙地双投设计说明.md)。
+- **【场景一：墙面与地面 Projection】WebGL2 实时系统与 4K60 母带**：见 [code/strings-z-dance](code/strings-z-dance/README.md)（3 条 30 秒 4K60 母带已打包至 Release `denza-assets-13.zip`）。
 
 **下一步优先处理投影安装距离、投射尺寸和镜头比。** 设备方已经询问这三项。已有场景一模型模拟，但没有现场实测安装确认；不能把模拟值直接说成定案。先读 [投影交接](docs/02-projection.md) 和 [可转发沟通稿](docs/03-vendor-message.md)。
 

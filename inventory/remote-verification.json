@@ -82,5 +82,12 @@
     "sha256": "f55f643abf011e9176c825f46275fe55a6efe0efbc96188169b349d9caefa233",
     "remoteDigest": "sha256:f55f643abf011e9176c825f46275fe55a6efe0efbc96188169b349d9caefa233",
     "state": "uploaded"
+  },
+  {
+    "name": "denza-assets-13.zip",
+    "bytes": 412973402,
+    "sha256": "f6f2dae5d853c7ea0b394ce4bc1ffcd8755bd133b3628ef4d8f53a5ad0c89ec7",
+    "remoteDigest": "sha256:f6f2dae5d853c7ea0b394ce4bc1ffcd8755bd133b3628ef4d8f53a5ad0c89ec7",
+    "state": "uploaded"
   }
 ]

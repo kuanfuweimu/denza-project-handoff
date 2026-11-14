@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "date": "2026-11-12",
+  "date": "2026-11-14",
   "repository": "kuanfuweimu/denza-project-handoff",
   "releaseTag": "handoff-2026-11-12",
   "originalBase": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission",
@@ -372,6 +372,14 @@
       "sha256": "fb4f342dd3495b72c0ab6979eba5d60e8bc5634946f84df48f5045959f602480",
       "archive": "denza-assets-01.zip",
       "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/外部参考作品/扩展图库/video-gallery.json"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/客户方案/1113_Z_dance_concept_breakdown.pdf",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\客户方案\\1113_Z_dance_concept_breakdown.pdf",
+      "bytes": 56991377,
+      "sha256": "b0260bc7c64f6cf6fe5a176661588bcc9570ddaf843443285cb5a6260faae8d0",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/客户方案/1113_Z_dance_concept_breakdown.pdf"
     },
     {
       "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/客户方案/ART- DENZA Z#1107V2(1).key",
@@ -774,6 +782,214 @@
       "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/此前资料/1027_DENZA Z_breakdown V1(1)(1).pdf"
     },
     {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/contact-1.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\contact-1.jpg",
+      "bytes": 388147,
+      "sha256": "decc9389f9675afd169aa22fe4a80bbc10abf1b58bcc7d84684119cb9e75197c",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/contact-1.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/contact-2.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\contact-2.jpg",
+      "bytes": 394504,
+      "sha256": "fbe565009de149ff8e470d146b811fe0d769db8f921a979eac6022f55dfcc95f",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/contact-2.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/dance_concept_text.txt",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\dance_concept_text.txt",
+      "bytes": 2465,
+      "sha256": "07a3974790ad4813a1b4d6560d59e8ad52d748c535487d6402caa12112d08b00",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/dance_concept_text.txt"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-01.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\page-01.png",
+      "bytes": 15437,
+      "sha256": "53685a5d9a6c049e976b6231ad07b99879571d10f5ce22169cce88bd8bb3e546",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-01.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-02.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\page-02.png",
+      "bytes": 1203692,
+      "sha256": "b46b35b47527f71f55d68f84cdec0c75c7d57db3c9f9929cea2149f4a32ef94a",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-02.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-03.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\page-03.png",
+      "bytes": 857727,
+      "sha256": "eec600fb2858c97235a5e144522fdfdcd4e89d00ca420311e4d365fa8b54fbda",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-03.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-04.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\page-04.png",
+      "bytes": 1173145,
+      "sha256": "f819f8d01e419dc7df048988f9d819a65cee0540281c4fcead8684779b5f6daa",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-04.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-05.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\page-05.png",
+      "bytes": 1558388,
+      "sha256": "c723e0a4a5bdafc27e8f11ee9a4b0255c9d145a2d8eac6c0c54cb3685242c6ed",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-05.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-06.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\page-06.png",
+      "bytes": 1767102,
+      "sha256": "b110de38a3492d39acb8a615ef66c3b65f1b861c50a8af200a25d55507fb5c2e",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-06.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-07.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\page-07.png",
+      "bytes": 1872764,
+      "sha256": "aeb2e2080cba70c2ae5b3de4f867dcb929cd06664b575284deee5a6c6b3fb7b0",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-07.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-08.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\page-08.png",
+      "bytes": 35991,
+      "sha256": "48c4f0c966e0d2e3682ecd6d876a1bbebf168b28592190e1a73e5283571d2de4",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-08.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-09.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\page-09.png",
+      "bytes": 639255,
+      "sha256": "90103d758f1279beac36f657924f4bf8c1bf83edb2775591c079c1720c5e6d27",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-09.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-10.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\page-10.png",
+      "bytes": 775967,
+      "sha256": "9b5614834adbb70d9353f095ba371fcaf12165c70a2ffb7e29433d24425843c4",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-10.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-11.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\page-11.png",
+      "bytes": 11948,
+      "sha256": "b85610aeb937666a13834c7e4567a6cec60b2edf28278de4310352af59cb5118",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-11.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-12.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\page-12.png",
+      "bytes": 313244,
+      "sha256": "73b07d793bc14f17dfff6d149e3947e186857e7f2d036157a345022c46556eac",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-12.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-13.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\page-13.png",
+      "bytes": 255503,
+      "sha256": "524a1da594011fc5bf2eade2214b347e380361a9a90969ea78da03dc70b0c187",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-13.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-14.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\page-14.png",
+      "bytes": 540738,
+      "sha256": "3cdc02c1a70ef748e6675b6021fbeb2cfdbea2e5196e219f97d458910d9f4556",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-14.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-15.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\page-15.png",
+      "bytes": 627955,
+      "sha256": "ce76826a584e281d226ac363113f95f0423c87cfa16a2dfb44fa4dabc522d6e8",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-15.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-16.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\page-16.png",
+      "bytes": 604191,
+      "sha256": "0250e87c7b80218d006d9b69a0f61742650c8cd64ba0b0fd57c3ddba4dac8841",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-16.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-17.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\page-17.png",
+      "bytes": 845445,
+      "sha256": "d8139d5da1ac6ca9d36109f9a77ef2819c61b6a2ecb5f80eba68325a63e0cea0",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-17.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-18.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\page-18.png",
+      "bytes": 1991955,
+      "sha256": "123d8b530be5ecc8471bd08f838b8f224e6311d4ef0d5a8d297e1d1ba482299b",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-18.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-19.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\page-19.png",
+      "bytes": 1330540,
+      "sha256": "9934b99679bae9bed8ce7b0770c78f8d6668f869c6e4eb766f7f8f184ce3e147",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-19.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-20.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\page-20.png",
+      "bytes": 192643,
+      "sha256": "91d3a664c5307713bea8af7786f4a05f74d2835281cd1ef15702753d394a9414",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-20.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-21.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\page-21.png",
+      "bytes": 872880,
+      "sha256": "f0ced5eb315a017cc4853a2c513bad5352bcd21f1fef770e6b5ec89f7351e334",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/page-21.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/pages.json",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\pages.json",
+      "bytes": 2948,
+      "sha256": "f9c665de5fe92c6ba16d10c736dcfbf0a446c0a27fb925e728a0860ad364513b",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/pages.json"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/舞蹈分镜与墙地双投设计说明.md",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\00_项目资料\\舞蹈分镜拆解_1113\\舞蹈分镜与墙地双投设计说明.md",
+      "bytes": 5345,
+      "sha256": "337e6601780c1d1aa39a4be82bb90a4b6e0dc1325ab53fbc46e64bce052cb0cf",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/舞蹈分镜拆解_1113/舞蹈分镜与墙地双投设计说明.md"
+    },
+    {
       "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/TD/3d mapping.toe",
       "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\TD\\3d mapping.toe",
       "bytes": 231354,
@@ -1037,6 +1253,766 @@
       "sha256": "1b381d6e0ddfb79aac4da7c124ef1e6720a3deaada2f49fffb4a981a2d4833b1",
       "archive": "denza-assets-01.zip",
       "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/参考视频/黑白数据影像_原始.mp4"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/DENZA_Z_WallFloor_Mapping_POPs.1.toe",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\DENZA_Z_WallFloor_Mapping_POPs.1.toe",
+      "bytes": 241098,
+      "sha256": "678f3523d142bf33fb43276c6280778fbc4482cfdac391cba73eea8658c8406a",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/DENZA_Z_WallFloor_Mapping_POPs.1.toe"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/DENZA_Z_WallFloor_Mapping_POPs.toe",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\DENZA_Z_WallFloor_Mapping_POPs.toe",
+      "bytes": 241098,
+      "sha256": "678f3523d142bf33fb43276c6280778fbc4482cfdac391cba73eea8658c8406a",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/DENZA_Z_WallFloor_Mapping_POPs.1.toe",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/DENZA_Z_WallFloor_Mapping_POPs.1.toe"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/README.md",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\README.md",
+      "bytes": 5054,
+      "sha256": "9191dddbabe3ea89a18ce5a44452c9a07d4cd2f63427f4555f06d71c1d0d318c",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/README.md"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/columns_fg.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\columns_fg.obj",
+      "bytes": 1605233,
+      "sha256": "ca52ff0f61a504c0c2a5dec1349691e15ca5f8b57969daebb6f1f4af15a8c4c9",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/columns_fg.obj"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/coverage_wall_floor_plan.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\coverage_wall_floor_plan.png",
+      "bytes": 321327,
+      "sha256": "9662d8754e53de9099204b91de9a8276ca07a0f60027c782a322aad86de00dc9",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/coverage_wall_floor_plan.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_stage.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\floor_stage.obj",
+      "bytes": 589854,
+      "sha256": "b7ac210cd581c2388916321d680b08cecfc8cf2ce3c5c01faeb7fb7e278050e6",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_stage.obj"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_uv_16x9.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\floor_uv_16x9.png",
+      "bytes": 314428,
+      "sha256": "6acf60fa1c687671a7bd68709cb192b0053df8255a7be64cc35f811a3f62d2c9",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_uv_16x9.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_uv_template.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\floor_uv_template.png",
+      "bytes": 324608,
+      "sha256": "c0adad1b425d961fa861dabbad8328b6b4190a2a8731fa384051f82a7f671e31",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_uv_template.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/occluder.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\occluder.obj",
+      "bytes": 5453318,
+      "sha256": "5b31829abeb5544a7a96c94000b691970481c14ffb8635fc1c838a78085a7459",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/occluder.obj"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/projectors_wall_floor.json",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\projectors_wall_floor.json",
+      "bytes": 3597,
+      "sha256": "e29f35174b54fbf254cec8e33993523769d95d51745147574f17a128544e3b9e",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/projectors_wall_floor.json"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/scene1.toe",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\scene1.toe",
+      "bytes": 241090,
+      "sha256": "157a7b5e13ccfb7cd06b9f642b81ca06f1d6bd8fe81e344b9b1ea5bd625fe550",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/scene1.toe"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/stage_all_mapping.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\stage_all_mapping.obj",
+      "bytes": 2796411,
+      "sha256": "5ce1e8132d13528d4357b4867d34dea54e4b98ea31d8e894ad369f816a453fb0",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/stage_all_mapping.obj"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/columns_fg.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_assets_wall_floor\\columns_fg.obj",
+      "bytes": 1605233,
+      "sha256": "ca52ff0f61a504c0c2a5dec1349691e15ca5f8b57969daebb6f1f4af15a8c4c9",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/columns_fg.obj",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/columns_fg.obj"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/coverage_wall_floor_plan.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_assets_wall_floor\\coverage_wall_floor_plan.png",
+      "bytes": 321327,
+      "sha256": "9662d8754e53de9099204b91de9a8276ca07a0f60027c782a322aad86de00dc9",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/coverage_wall_floor_plan.png",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/coverage_wall_floor_plan.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/floor_stage.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_assets_wall_floor\\floor_stage.obj",
+      "bytes": 589854,
+      "sha256": "b7ac210cd581c2388916321d680b08cecfc8cf2ce3c5c01faeb7fb7e278050e6",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_stage.obj",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_stage.obj"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/floor_uv_16x9.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_assets_wall_floor\\floor_uv_16x9.png",
+      "bytes": 314428,
+      "sha256": "6acf60fa1c687671a7bd68709cb192b0053df8255a7be64cc35f811a3f62d2c9",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_uv_16x9.png",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_uv_16x9.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/floor_uv_template.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_assets_wall_floor\\floor_uv_template.png",
+      "bytes": 324608,
+      "sha256": "c0adad1b425d961fa861dabbad8328b6b4190a2a8731fa384051f82a7f671e31",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_uv_template.png",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_uv_template.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/occluder.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_assets_wall_floor\\occluder.obj",
+      "bytes": 5453318,
+      "sha256": "5b31829abeb5544a7a96c94000b691970481c14ffb8635fc1c838a78085a7459",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/occluder.obj",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/occluder.obj"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/projectors_wall_floor.json",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_assets_wall_floor\\projectors_wall_floor.json",
+      "bytes": 3597,
+      "sha256": "e29f35174b54fbf254cec8e33993523769d95d51745147574f17a128544e3b9e",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/projectors_wall_floor.json",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/projectors_wall_floor.json"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/stage_all_mapping.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_assets_wall_floor\\stage_all_mapping.obj",
+      "bytes": 2796411,
+      "sha256": "5ce1e8132d13528d4357b4867d34dea54e4b98ea31d8e894ad369f816a453fb0",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/stage_all_mapping.obj",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/stage_all_mapping.obj"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_assets_wall_floor\\wall_combined.obj",
+      "bytes": 575139,
+      "sha256": "95ff1c049071cbd23f89f90e849cde231a49863fc2f92443811bc38f7313834b",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined.obj"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined_uv_16x9.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_assets_wall_floor\\wall_combined_uv_16x9.png",
+      "bytes": 182874,
+      "sha256": "c6554f1c83c1b7d646fb38af1d9780a96b75cc7f9fbdb705d10db7799100256f",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined_uv_16x9.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined_uv_template.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_assets_wall_floor\\wall_combined_uv_template.png",
+      "bytes": 222678,
+      "sha256": "256a09bfb9102dbe963972e2231afc985a57e5a7340a9a2b778082fcaeaee99a",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined_uv_template.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_build_all.py",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_build_all.py",
+      "bytes": 4187,
+      "sha256": "3dbea6c4e8ccfc420aff8c384bf2b6551010d7399d1e3436291f15550fd8eb5b",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_build_all.py"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_build_wall_floor_mapping.py",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_build_wall_floor_mapping.py",
+      "bytes": 17197,
+      "sha256": "c7e61a20d0f62b318890f4bad240a56776e44912674d0b29ceee9e22304d6da9",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_build_wall_floor_mapping.py"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_build_z_dance_pops.py",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_build_z_dance_pops.py",
+      "bytes": 15714,
+      "sha256": "4639ea0858a54f3983004b7e652da5f97287b4fbe6eeda5974f99d8155f47020",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_build_z_dance_pops.py"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_floor_ch1_axis.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_live_previews\\td_pops_floor_ch1_axis.jpg",
+      "bytes": 411451,
+      "sha256": "3a046f8e7fc3dea5aced9b41c8c69081d470dbaf2a3f1a5fcf08849e6a02a88f",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_floor_ch1_axis.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_floor_ch3_orange.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_live_previews\\td_pops_floor_ch3_orange.jpg",
+      "bytes": 1791033,
+      "sha256": "617b83674e030b010bfef6d1e22b99b3c0f2d7c3b387b3d307662288d994d590",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_floor_ch3_orange.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_floor_ch5_zgrid.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_live_previews\\td_pops_floor_ch5_zgrid.jpg",
+      "bytes": 821409,
+      "sha256": "a5ddd0cdfee997be544a23d281dc414ffd6e1a28059acaffa1ad39e4b6e0e583",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_floor_ch5_zgrid.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_wall_ch1_axis.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_live_previews\\td_pops_wall_ch1_axis.jpg",
+      "bytes": 2487246,
+      "sha256": "476365dd61c495998ac4465090749207e96eb9b2576d7f7dbc7c17e220bf76d5",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_wall_ch1_axis.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_wall_ch3_orange.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_live_previews\\td_pops_wall_ch3_orange.jpg",
+      "bytes": 4073218,
+      "sha256": "17e5d3bce03203536fd16ccd17c56269312a7592680dbf58128aa8d333ac4bac",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_wall_ch3_orange.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_wall_ch5_zgrid.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_live_previews\\td_pops_wall_ch5_zgrid.jpg",
+      "bytes": 1763396,
+      "sha256": "04a18838dacd8ff9c64f41d66a83113e2df78bc1b360a22226ffdfcd17329af0",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_wall_ch5_zgrid.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_proj1_wall_uv_cal.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_live_previews\\td_proj1_wall_uv_cal.jpg",
+      "bytes": 1113955,
+      "sha256": "611cdda186fcb9cf9817c05340aa2daffaae86e9e30873ea899601701cfc690c",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_proj1_wall_uv_cal.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_proj2_floor_uv_cal.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_live_previews\\td_proj2_floor_uv_cal.jpg",
+      "bytes": 1210378,
+      "sha256": "b2a04da9baebcfb831c23b71b59a0b8b0380515e70a6dd8b6a8c8b274452a325",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_proj2_floor_uv_cal.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch1_axis.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_live_previews\\td_sim_3d_ch1_axis.jpg",
+      "bytes": 2111838,
+      "sha256": "462057014439ff51c46cbde291d5694eb71ea40dd20f7f1a1058133136bcb217",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch1_axis.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch3_orange.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_live_previews\\td_sim_3d_ch3_orange.jpg",
+      "bytes": 2602604,
+      "sha256": "b1559896d1a4bf3b918f0ab0828ab2121e2e8cf2abab838c0477b14dcf5873b5",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch3_orange.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch5_zgrid.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_live_previews\\td_sim_3d_ch5_zgrid.jpg",
+      "bytes": 2341850,
+      "sha256": "7a0a45930daa7b621a9eb2dc7c4987486dfae8adb841347824e8c2e8d48f78ed",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch5_zgrid.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_uv_cal.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\td_live_previews\\td_sim_3d_uv_cal.jpg",
+      "bytes": 2341850,
+      "sha256": "7a0a45930daa7b621a9eb2dc7c4987486dfae8adb841347824e8c2e8d48f78ed",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch5_zgrid.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch5_zgrid.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/wall_combined.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\wall_combined.obj",
+      "bytes": 575139,
+      "sha256": "95ff1c049071cbd23f89f90e849cde231a49863fc2f92443811bc38f7313834b",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined.obj",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined.obj"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/wall_combined_uv_16x9.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\wall_combined_uv_16x9.png",
+      "bytes": 182874,
+      "sha256": "c6554f1c83c1b7d646fb38af1d9780a96b75cc7f9fbdb705d10db7799100256f",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined_uv_16x9.png",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined_uv_16x9.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/wall_combined_uv_template.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\wall_combined_uv_template.png",
+      "bytes": 222678,
+      "sha256": "256a09bfb9102dbe963972e2231afc985a57e5a7340a9a2b778082fcaeaee99a",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined_uv_template.png",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined_uv_template.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/场景1_墙面与地面_Projection.toe",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\场景1_墙面与地面_Projection\\场景1_墙面与地面_Projection.toe",
+      "bytes": 241090,
+      "sha256": "157a7b5e13ccfb7cd06b9f642b81ca06f1d6bd8fe81e344b9b1ea5bd625fe550",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/scene1.toe",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/scene1.toe"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/DENZA_Z_WallFloor_Mapping_POPs.1.toe",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\DENZA_Z_WallFloor_Mapping_POPs.1.toe",
+      "bytes": 241098,
+      "sha256": "678f3523d142bf33fb43276c6280778fbc4482cfdac391cba73eea8658c8406a",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/DENZA_Z_WallFloor_Mapping_POPs.1.toe",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/DENZA_Z_WallFloor_Mapping_POPs.1.toe"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/DENZA_Z_WallFloor_Mapping_POPs.toe",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\DENZA_Z_WallFloor_Mapping_POPs.toe",
+      "bytes": 241098,
+      "sha256": "678f3523d142bf33fb43276c6280778fbc4482cfdac391cba73eea8658c8406a",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/DENZA_Z_WallFloor_Mapping_POPs.1.toe",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/DENZA_Z_WallFloor_Mapping_POPs.1.toe"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/README.md",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\README.md",
+      "bytes": 5054,
+      "sha256": "9191dddbabe3ea89a18ce5a44452c9a07d4cd2f63427f4555f06d71c1d0d318c",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/README.md",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/README.md"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/columns_fg.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\columns_fg.obj",
+      "bytes": 1605233,
+      "sha256": "ca52ff0f61a504c0c2a5dec1349691e15ca5f8b57969daebb6f1f4af15a8c4c9",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/columns_fg.obj",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/columns_fg.obj"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/coverage_wall_floor_plan.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\coverage_wall_floor_plan.png",
+      "bytes": 321327,
+      "sha256": "9662d8754e53de9099204b91de9a8276ca07a0f60027c782a322aad86de00dc9",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/coverage_wall_floor_plan.png",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/coverage_wall_floor_plan.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/floor_stage.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\floor_stage.obj",
+      "bytes": 589854,
+      "sha256": "b7ac210cd581c2388916321d680b08cecfc8cf2ce3c5c01faeb7fb7e278050e6",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_stage.obj",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_stage.obj"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/floor_uv_16x9.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\floor_uv_16x9.png",
+      "bytes": 314428,
+      "sha256": "6acf60fa1c687671a7bd68709cb192b0053df8255a7be64cc35f811a3f62d2c9",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_uv_16x9.png",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_uv_16x9.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/floor_uv_template.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\floor_uv_template.png",
+      "bytes": 324608,
+      "sha256": "c0adad1b425d961fa861dabbad8328b6b4190a2a8731fa384051f82a7f671e31",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_uv_template.png",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_uv_template.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/occluder.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\occluder.obj",
+      "bytes": 5453318,
+      "sha256": "5b31829abeb5544a7a96c94000b691970481c14ffb8635fc1c838a78085a7459",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/occluder.obj",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/occluder.obj"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/projectors_wall_floor.json",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\projectors_wall_floor.json",
+      "bytes": 3597,
+      "sha256": "e29f35174b54fbf254cec8e33993523769d95d51745147574f17a128544e3b9e",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/projectors_wall_floor.json",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/projectors_wall_floor.json"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/scene1.toe",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\scene1.toe",
+      "bytes": 241090,
+      "sha256": "157a7b5e13ccfb7cd06b9f642b81ca06f1d6bd8fe81e344b9b1ea5bd625fe550",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/scene1.toe",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/scene1.toe"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/stage_all_mapping.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\stage_all_mapping.obj",
+      "bytes": 2796411,
+      "sha256": "5ce1e8132d13528d4357b4867d34dea54e4b98ea31d8e894ad369f816a453fb0",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/stage_all_mapping.obj",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/stage_all_mapping.obj"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_assets_wall_floor/columns_fg.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_assets_wall_floor\\columns_fg.obj",
+      "bytes": 1605233,
+      "sha256": "ca52ff0f61a504c0c2a5dec1349691e15ca5f8b57969daebb6f1f4af15a8c4c9",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/columns_fg.obj",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/columns_fg.obj"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_assets_wall_floor/coverage_wall_floor_plan.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_assets_wall_floor\\coverage_wall_floor_plan.png",
+      "bytes": 321327,
+      "sha256": "9662d8754e53de9099204b91de9a8276ca07a0f60027c782a322aad86de00dc9",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/coverage_wall_floor_plan.png",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/coverage_wall_floor_plan.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_assets_wall_floor/floor_stage.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_assets_wall_floor\\floor_stage.obj",
+      "bytes": 589854,
+      "sha256": "b7ac210cd581c2388916321d680b08cecfc8cf2ce3c5c01faeb7fb7e278050e6",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_stage.obj",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_stage.obj"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_assets_wall_floor/floor_uv_16x9.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_assets_wall_floor\\floor_uv_16x9.png",
+      "bytes": 314428,
+      "sha256": "6acf60fa1c687671a7bd68709cb192b0053df8255a7be64cc35f811a3f62d2c9",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_uv_16x9.png",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_uv_16x9.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_assets_wall_floor/floor_uv_template.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_assets_wall_floor\\floor_uv_template.png",
+      "bytes": 324608,
+      "sha256": "c0adad1b425d961fa861dabbad8328b6b4190a2a8731fa384051f82a7f671e31",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_uv_template.png",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_uv_template.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_assets_wall_floor/occluder.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_assets_wall_floor\\occluder.obj",
+      "bytes": 5453318,
+      "sha256": "5b31829abeb5544a7a96c94000b691970481c14ffb8635fc1c838a78085a7459",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/occluder.obj",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/occluder.obj"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_assets_wall_floor/projectors_wall_floor.json",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_assets_wall_floor\\projectors_wall_floor.json",
+      "bytes": 3597,
+      "sha256": "e29f35174b54fbf254cec8e33993523769d95d51745147574f17a128544e3b9e",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/projectors_wall_floor.json",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/projectors_wall_floor.json"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_assets_wall_floor/stage_all_mapping.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_assets_wall_floor\\stage_all_mapping.obj",
+      "bytes": 2796411,
+      "sha256": "5ce1e8132d13528d4357b4867d34dea54e4b98ea31d8e894ad369f816a453fb0",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/stage_all_mapping.obj",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/stage_all_mapping.obj"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_assets_wall_floor/wall_combined.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_assets_wall_floor\\wall_combined.obj",
+      "bytes": 575139,
+      "sha256": "95ff1c049071cbd23f89f90e849cde231a49863fc2f92443811bc38f7313834b",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined.obj",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined.obj"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_assets_wall_floor/wall_combined_uv_16x9.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_assets_wall_floor\\wall_combined_uv_16x9.png",
+      "bytes": 182874,
+      "sha256": "c6554f1c83c1b7d646fb38af1d9780a96b75cc7f9fbdb705d10db7799100256f",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined_uv_16x9.png",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined_uv_16x9.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_assets_wall_floor/wall_combined_uv_template.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_assets_wall_floor\\wall_combined_uv_template.png",
+      "bytes": 222678,
+      "sha256": "256a09bfb9102dbe963972e2231afc985a57e5a7340a9a2b778082fcaeaee99a",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined_uv_template.png",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined_uv_template.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_build_all.py",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_build_all.py",
+      "bytes": 4187,
+      "sha256": "3dbea6c4e8ccfc420aff8c384bf2b6551010d7399d1e3436291f15550fd8eb5b",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_build_all.py",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_build_all.py"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_build_wall_floor_mapping.py",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_build_wall_floor_mapping.py",
+      "bytes": 17197,
+      "sha256": "c7e61a20d0f62b318890f4bad240a56776e44912674d0b29ceee9e22304d6da9",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_build_wall_floor_mapping.py",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_build_wall_floor_mapping.py"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_build_z_dance_pops.py",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_build_z_dance_pops.py",
+      "bytes": 15714,
+      "sha256": "4639ea0858a54f3983004b7e652da5f97287b4fbe6eeda5974f99d8155f47020",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_build_z_dance_pops.py",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_build_z_dance_pops.py"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_live_previews/td_pops_floor_ch1_axis.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_live_previews\\td_pops_floor_ch1_axis.jpg",
+      "bytes": 411451,
+      "sha256": "3a046f8e7fc3dea5aced9b41c8c69081d470dbaf2a3f1a5fcf08849e6a02a88f",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_floor_ch1_axis.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_floor_ch1_axis.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_live_previews/td_pops_floor_ch3_orange.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_live_previews\\td_pops_floor_ch3_orange.jpg",
+      "bytes": 1791033,
+      "sha256": "617b83674e030b010bfef6d1e22b99b3c0f2d7c3b387b3d307662288d994d590",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_floor_ch3_orange.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_floor_ch3_orange.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_live_previews/td_pops_floor_ch5_zgrid.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_live_previews\\td_pops_floor_ch5_zgrid.jpg",
+      "bytes": 821409,
+      "sha256": "a5ddd0cdfee997be544a23d281dc414ffd6e1a28059acaffa1ad39e4b6e0e583",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_floor_ch5_zgrid.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_floor_ch5_zgrid.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_live_previews/td_pops_wall_ch1_axis.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_live_previews\\td_pops_wall_ch1_axis.jpg",
+      "bytes": 2487246,
+      "sha256": "476365dd61c495998ac4465090749207e96eb9b2576d7f7dbc7c17e220bf76d5",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_wall_ch1_axis.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_wall_ch1_axis.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_live_previews/td_pops_wall_ch3_orange.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_live_previews\\td_pops_wall_ch3_orange.jpg",
+      "bytes": 4073218,
+      "sha256": "17e5d3bce03203536fd16ccd17c56269312a7592680dbf58128aa8d333ac4bac",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_wall_ch3_orange.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_wall_ch3_orange.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_live_previews/td_pops_wall_ch5_zgrid.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_live_previews\\td_pops_wall_ch5_zgrid.jpg",
+      "bytes": 1763396,
+      "sha256": "04a18838dacd8ff9c64f41d66a83113e2df78bc1b360a22226ffdfcd17329af0",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_wall_ch5_zgrid.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_wall_ch5_zgrid.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_live_previews/td_proj1_wall_uv_cal.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_live_previews\\td_proj1_wall_uv_cal.jpg",
+      "bytes": 1113955,
+      "sha256": "611cdda186fcb9cf9817c05340aa2daffaae86e9e30873ea899601701cfc690c",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_proj1_wall_uv_cal.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_proj1_wall_uv_cal.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_live_previews/td_proj2_floor_uv_cal.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_live_previews\\td_proj2_floor_uv_cal.jpg",
+      "bytes": 1210378,
+      "sha256": "b2a04da9baebcfb831c23b71b59a0b8b0380515e70a6dd8b6a8c8b274452a325",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_proj2_floor_uv_cal.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_proj2_floor_uv_cal.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_live_previews/td_sim_3d_ch1_axis.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_live_previews\\td_sim_3d_ch1_axis.jpg",
+      "bytes": 2111838,
+      "sha256": "462057014439ff51c46cbde291d5694eb71ea40dd20f7f1a1058133136bcb217",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch1_axis.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch1_axis.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_live_previews/td_sim_3d_ch3_orange.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_live_previews\\td_sim_3d_ch3_orange.jpg",
+      "bytes": 2602604,
+      "sha256": "b1559896d1a4bf3b918f0ab0828ab2121e2e8cf2abab838c0477b14dcf5873b5",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch3_orange.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch3_orange.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_live_previews/td_sim_3d_ch5_zgrid.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_live_previews\\td_sim_3d_ch5_zgrid.jpg",
+      "bytes": 2341850,
+      "sha256": "7a0a45930daa7b621a9eb2dc7c4987486dfae8adb841347824e8c2e8d48f78ed",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch5_zgrid.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch5_zgrid.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/td_live_previews/td_sim_3d_uv_cal.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\td_live_previews\\td_sim_3d_uv_cal.jpg",
+      "bytes": 2341850,
+      "sha256": "7a0a45930daa7b621a9eb2dc7c4987486dfae8adb841347824e8c2e8d48f78ed",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch5_zgrid.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch5_zgrid.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/wall_combined.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\wall_combined.obj",
+      "bytes": 575139,
+      "sha256": "95ff1c049071cbd23f89f90e849cde231a49863fc2f92443811bc38f7313834b",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined.obj",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined.obj"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/wall_combined_uv_16x9.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\wall_combined_uv_16x9.png",
+      "bytes": 182874,
+      "sha256": "c6554f1c83c1b7d646fb38af1d9780a96b75cc7f9fbdb705d10db7799100256f",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined_uv_16x9.png",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined_uv_16x9.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/wall_combined_uv_template.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\wall_combined_uv_template.png",
+      "bytes": 222678,
+      "sha256": "256a09bfb9102dbe963972e2231afc985a57e5a7340a9a2b778082fcaeaee99a",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined_uv_template.png",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined_uv_template.png"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/z-dance_floor_stage_30s_4k60.mp4",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\z-dance_floor_stage_30s_4k60.mp4",
+      "bytes": 70219128,
+      "sha256": "b0c4a7198272a62f61a8c84e30effa852f1220f0f066ec72ddb52223534dc8e6",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/z-dance_floor_stage_30s_4k60.mp4"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/z-dance_stage3d_split_30s_4k60.mp4",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\z-dance_stage3d_split_30s_4k60.mp4",
+      "bytes": 106652336,
+      "sha256": "c1fdacdc8ab6cd4cb7abdce850754a9c434da40c538469b94b7c6135f0b7f0df",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/z-dance_stage3d_split_30s_4k60.mp4"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/z-dance_wall_combined_30s_4k60.mp4",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\z-dance_wall_combined_30s_4k60.mp4",
+      "bytes": 107324032,
+      "sha256": "4dbcfa3dbaab3c0df0855aebf8d77443c26d115c144f835c37c497399656f7ee",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/z-dance_wall_combined_30s_4k60.mp4"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/z_dance_contact_sheet.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\z_dance_contact_sheet.jpg",
+      "bytes": 518634,
+      "sha256": "fe70b926e2d23f592e7b064d6847ab0025e74f57e120a3d3a29a8972f195ae56",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/z_dance_contact_sheet.jpg"
+    },
+    {
+      "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/场景1_墙面与地面_Projection.toe",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\01_场景1_墙面双投影\\墙地双投方案_1114\\场景1_墙面与地面_Projection.toe",
+      "bytes": 241090,
+      "sha256": "157a7b5e13ccfb7cd06b9f642b81ca06f1d6bd8fe81e344b9b1ea5bd625fe550",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/scene1.toe",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/scene1.toe"
     },
     {
       "path": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/计算与模拟/export_td.py",
@@ -3869,18 +4845,26 @@
     {
       "path": "DENZA 2/2026-11_DENZA Z/文件总清单.json",
       "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\文件总清单.json",
-      "bytes": 58145,
-      "sha256": "96f212a408df58d5c815f98f0c4574bdf437bb3ecdb1e49bc3da40fa7d2d43d8",
-      "archive": "denza-assets-03.zip",
+      "bytes": 123378,
+      "sha256": "6185c7046c2b66c7abc6bb5531d64904eecee47d3531220f43092fd24077230b",
+      "archive": "denza-assets-13.zip",
       "member": "DENZA 2/2026-11_DENZA Z/文件总清单.json"
     },
     {
       "path": "DENZA 2/2026-11_DENZA Z/项目入口.md",
       "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA 2\\2026-11_DENZA Z\\项目入口.md",
-      "bytes": 5992,
-      "sha256": "d91736239f4035ccbd69fed7ab633d137cdba4addbbd81bf68b576116878de19",
-      "archive": "denza-assets-03.zip",
+      "bytes": 8633,
+      "sha256": "8fd3daf1ed812ff9039578600d5c524073578f6fb5c728e7afad94947bb95c2c",
+      "archive": "denza-assets-13.zip",
       "member": "DENZA 2/2026-11_DENZA Z/项目入口.md"
+    },
+    {
+      "path": "DENZA N/.gitignore",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\.gitignore",
+      "bytes": 403,
+      "sha256": "2b88d389cf0ad6a07dfd71a21122a0314ffaabebad7979a7085bf6f566b9a606",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/.gitignore"
     },
     {
       "path": "DENZA N/1027_DENZA Z_breakdown V1(1)(1).pdf",
@@ -3890,6 +4874,15 @@
       "archive": "denza-assets-01.zip",
       "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/此前资料/1027_DENZA Z_breakdown V1(1)(1).pdf",
       "duplicateOf": "DENZA 2/2026-11_DENZA Z/00_项目资料/此前资料/1027_DENZA Z_breakdown V1(1)(1).pdf"
+    },
+    {
+      "path": "DENZA N/1113_Z_dance_concept_breakdown.pdf",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\1113_Z_dance_concept_breakdown.pdf",
+      "bytes": 56991377,
+      "sha256": "b0260bc7c64f6cf6fe5a176661588bcc9570ddaf843443285cb5a6260faae8d0",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/客户方案/1113_Z_dance_concept_breakdown.pdf",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/00_项目资料/客户方案/1113_Z_dance_concept_breakdown.pdf"
     },
     {
       "path": "DENZA N/3d mapping.5.toe",
@@ -3908,6 +4901,15 @@
       "archive": "denza-assets-01.zip",
       "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/原始工程备份/3d mapping.5.toe",
       "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/原始工程备份/3d mapping.5.toe"
+    },
+    {
+      "path": "DENZA N/Z dance conce.pdf",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\Z dance conce.pdf",
+      "bytes": 56991377,
+      "sha256": "b0260bc7c64f6cf6fe5a176661588bcc9570ddaf843443285cb5a6260faae8d0",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/00_项目资料/客户方案/1113_Z_dance_concept_breakdown.pdf",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/00_项目资料/客户方案/1113_Z_dance_concept_breakdown.pdf"
     },
     {
       "path": "DENZA N/_work/showcase-music/music-report.json",
@@ -4764,6 +5766,136 @@
       "member": "DENZA N/_work/strings-web-edit/report.json"
     },
     {
+      "path": "DENZA N/_work/wall_floor_projection/archive_1113_pdf.py",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\_work\\wall_floor_projection\\archive_1113_pdf.py",
+      "bytes": 3193,
+      "sha256": "5e69028bb7c274fde82e042a3d36fd43c2e789f24664f016f13535eb640120b5",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/_work/wall_floor_projection/archive_1113_pdf.py"
+    },
+    {
+      "path": "DENZA N/_work/wall_floor_projection/build_and_verify_toe.py",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\_work\\wall_floor_projection\\build_and_verify_toe.py",
+      "bytes": 1652,
+      "sha256": "d4c72c29681080e0fee99eebc63106215f1d693192fa62b507f2d8a7183171cc",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/_work/wall_floor_projection/build_and_verify_toe.py"
+    },
+    {
+      "path": "DENZA N/_work/wall_floor_projection/build_wall_floor_assets.py",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\_work\\wall_floor_projection\\build_wall_floor_assets.py",
+      "bytes": 12704,
+      "sha256": "667a089e120866cb65263be8953d5e8e1e4e0a12180ffe710bb76f4a6fd73942",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/_work/wall_floor_projection/build_wall_floor_assets.py"
+    },
+    {
+      "path": "DENZA N/_work/wall_floor_projection/check_floor_canopy.py",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\_work\\wall_floor_projection\\check_floor_canopy.py",
+      "bytes": 1899,
+      "sha256": "646ffee982ff57cc319e057c97de0b8eb5b8f9783285b7d00085852b876972aa",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/_work/wall_floor_projection/check_floor_canopy.py"
+    },
+    {
+      "path": "DENZA N/_work/wall_floor_projection/fix_occluder_and_cams.py",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\_work\\wall_floor_projection\\fix_occluder_and_cams.py",
+      "bytes": 4626,
+      "sha256": "f68645060a7a0a388759e0620361dd4ea0b7291ccd2692f50d15936ade00c35c",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/_work/wall_floor_projection/fix_occluder_and_cams.py"
+    },
+    {
+      "path": "DENZA N/_work/wall_floor_projection/generate_templates_and_json.py",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\_work\\wall_floor_projection\\generate_templates_and_json.py",
+      "bytes": 23058,
+      "sha256": "93e3a4ef63c9078a7fb6500727fb9a6a4b30292dcef7b11bd7044d95a4c3ad1b",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/_work/wall_floor_projection/generate_templates_and_json.py"
+    },
+    {
+      "path": "DENZA N/_work/wall_floor_projection/geom_new_skp.npz",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\_work\\wall_floor_projection\\geom_new_skp.npz",
+      "bytes": 15907093,
+      "sha256": "323ad21bfb6b1aeddc5c06750ab487af50ac1b4f61c1096babd4f15a2d6d8516",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/_work/wall_floor_projection/geom_new_skp.npz"
+    },
+    {
+      "path": "DENZA N/_work/wall_floor_projection/inspect_floor_and_walls.py",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\_work\\wall_floor_projection\\inspect_floor_and_walls.py",
+      "bytes": 3806,
+      "sha256": "44d34c3e9bd0136aaa29eb6d45276837050a6aa692af25c8e13e857c27af07f1",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/_work/wall_floor_projection/inspect_floor_and_walls.py"
+    },
+    {
+      "path": "DENZA N/_work/wall_floor_projection/inspect_new_skp.py",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\_work\\wall_floor_projection\\inspect_new_skp.py",
+      "bytes": 3589,
+      "sha256": "00eee6e8ab32d0830899d71ff30eeeb89e9b51f1e85bb97c8af39cfac86b6d39",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/_work/wall_floor_projection/inspect_new_skp.py"
+    },
+    {
+      "path": "DENZA N/_work/wall_floor_projection/inspect_skp.py",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\_work\\wall_floor_projection\\inspect_skp.py",
+      "bytes": 952,
+      "sha256": "3bcd8abeeffccccb437e3e5d24579ea1b49c83d61332374a7e0433db0a705b5e",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/_work/wall_floor_projection/inspect_skp.py"
+    },
+    {
+      "path": "DENZA N/_work/wall_floor_projection/inspect_td_pars.py",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\_work\\wall_floor_projection\\inspect_td_pars.py",
+      "bytes": 2649,
+      "sha256": "2fa1b09a37854ec3b45672c3540637440b2b32b037fd77b34233feac983af40d",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/_work/wall_floor_projection/inspect_td_pars.py"
+    },
+    {
+      "path": "DENZA N/_work/wall_floor_projection/render_z_dance_showcase.py",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\_work\\wall_floor_projection\\render_z_dance_showcase.py",
+      "bytes": 8308,
+      "sha256": "6aca27a8b3d43e7bcc430fcf1fce5dd2663fe5830726091caf886cfadc7308bc",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/_work/wall_floor_projection/render_z_dance_showcase.py"
+    },
+    {
+      "path": "DENZA N/_work/wall_floor_projection/run_mcp_build_on_13319.py",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\_work\\wall_floor_projection\\run_mcp_build_on_13319.py",
+      "bytes": 6317,
+      "sha256": "ad10b691ca8bfa95121966fbfff4dc054ed778da9aa5794e05abf550d390aea9",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/_work/wall_floor_projection/run_mcp_build_on_13319.py"
+    },
+    {
+      "path": "DENZA N/_work/wall_floor_projection/tdmcp_client.py",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\_work\\wall_floor_projection\\tdmcp_client.py",
+      "bytes": 1621,
+      "sha256": "3cc62f95332dc7c5935fa8ba02e0a97f29168886d9778fa8c23d9c4c61cb8f72",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/_work/wall_floor_projection/tdmcp_client.py"
+    },
+    {
+      "path": "DENZA N/scene1.1.toe",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\scene1.1.toe",
+      "bytes": 241090,
+      "sha256": "157a7b5e13ccfb7cd06b9f642b81ca06f1d6bd8fe81e344b9b1ea5bd625fe550",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/scene1.toe",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/scene1.toe"
+    },
+    {
+      "path": "DENZA N/scene1.toe",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\scene1.toe",
+      "bytes": 241090,
+      "sha256": "157a7b5e13ccfb7cd06b9f642b81ca06f1d6bd8fe81e344b9b1ea5bd625fe550",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/scene1.toe",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/scene1.toe"
+    },
+    {
       "path": "DENZA N/strings-space-backup-20261112-034927/.gitignore",
       "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-space-backup-20261112-034927\\.gitignore",
       "bytes": 299,
@@ -5239,26 +6371,34 @@
     {
       "path": "DENZA N/strings-space/CHANGELOG.md",
       "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-space\\CHANGELOG.md",
-      "bytes": 1170,
-      "sha256": "40b02531e5ee1b6ed9e50bd9273d4819fc821a83bcd257d0345e8d5d291e494e",
-      "archive": "denza-assets-05.zip",
+      "bytes": 1981,
+      "sha256": "c375488b07bb22c631bd219ec55088d1ca12b31e9719a18587ac3d5290a55fe0",
+      "archive": "denza-assets-13.zip",
       "member": "DENZA N/strings-space/CHANGELOG.md"
     },
     {
       "path": "DENZA N/strings-space/README.md",
       "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-space\\README.md",
-      "bytes": 12916,
-      "sha256": "26cfdab290235e7bc0ce3330ffebdf7acdf27b28b54c6001edded6d76001d8eb",
-      "archive": "denza-assets-05.zip",
+      "bytes": 13241,
+      "sha256": "845b6f598cf4e86e26861a3d08a8041903d0aac6a4e8163486cb866a295f3599",
+      "archive": "denza-assets-13.zip",
       "member": "DENZA N/strings-space/README.md"
     },
     {
       "path": "DENZA N/strings-space/VERSION",
       "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-space\\VERSION",
-      "bytes": 7,
-      "sha256": "86f0555bccd069ac54e4c54a19a0f1aed9d328e13aa34aa090f3f3d43aaad441",
-      "archive": "denza-assets-05.zip",
+      "bytes": 6,
+      "sha256": "1575e1af4a95f12f70b4ee6a6adce8160953d93ea17dc2611b90883ccc3ad3b8",
+      "archive": "denza-assets-13.zip",
       "member": "DENZA N/strings-space/VERSION"
+    },
+    {
+      "path": "DENZA N/strings-space/ZLINE.md",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-space\\ZLINE.md",
+      "bytes": 3837,
+      "sha256": "874d755953ffe5df154dbb140f70b21179a77e696af16002d23ae5e5edf0ed07",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/strings-space/ZLINE.md"
     },
     {
       "path": "DENZA N/strings-space/control.html",
@@ -5386,6 +6526,14 @@
       "duplicateOf": "DENZA N/strings-space-backup-20261112-034927/docs/preview/strings.png"
     },
     {
+      "path": "DENZA N/strings-space/export-zline.ps1",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-space\\export-zline.ps1",
+      "bytes": 1143,
+      "sha256": "ea6ab8c23fb0f201307a2da43a7aafa5c9fab2e713e68f93ef7cd7178a084bd1",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/strings-space/export-zline.ps1"
+    },
+    {
       "path": "DENZA N/strings-space/export.ps1",
       "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-space\\export.ps1",
       "bytes": 799,
@@ -5487,11 +6635,10 @@
     {
       "path": "DENZA N/strings-space/server.js",
       "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-space\\server.js",
-      "bytes": 3285,
-      "sha256": "b42206249edaa0f8c5516fc6ce5a7fb5f70668efa59a6c4de6e73b9f34cf7570",
-      "archive": "denza-assets-04.zip",
-      "member": "DENZA N/strings-space-backup-20261112-034927/server.js",
-      "duplicateOf": "DENZA N/strings-space-backup-20261112-034927/server.js"
+      "bytes": 3579,
+      "sha256": "b3e3695c8b06b4efb44efb5ec2778e3e2b11735029028a104c2a6e8188a54fe3",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/strings-space/server.js"
     },
     {
       "path": "DENZA N/strings-space/shots/_contact-sheet.jpg",
@@ -5876,6 +7023,38 @@
       "sha256": "bde2293a16176c9819a3e6bd5be7d0116e450807cb3d054d7cbf4ff2cc47eab8",
       "archive": "denza-assets-08.zip",
       "member": "DENZA N/strings-space/tests/material-tracking.test.js"
+    },
+    {
+      "path": "DENZA N/strings-space/tests/zline.test.js",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-space\\tests\\zline.test.js",
+      "bytes": 1549,
+      "sha256": "fa1865adcaadb32ba9f9f8b2647bb6c0034dd52e0f4c8e237d830f5997840b46",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/strings-space/tests/zline.test.js"
+    },
+    {
+      "path": "DENZA N/strings-space/zline-engine.js",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-space\\zline-engine.js",
+      "bytes": 8075,
+      "sha256": "7af63712c01c4a9b11acbab728b1c2132f1fab873de1ccf9a1513d0253b48cf0",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/strings-space/zline-engine.js"
+    },
+    {
+      "path": "DENZA N/strings-space/zline-scenes.js",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-space\\zline-scenes.js",
+      "bytes": 21858,
+      "sha256": "e35bd79d236ee37545374088a20c5ab25d90de8a8b9e0f06d48330b59d55238d",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/strings-space/zline-scenes.js"
+    },
+    {
+      "path": "DENZA N/strings-space/zline.html",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-space\\zline.html",
+      "bytes": 16147,
+      "sha256": "bef3fab0de908d90ccd37eaf31ee595172846f2dbd3c9afb2be5668e1778c60a",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/strings-space/zline.html"
     },
     {
       "path": "DENZA N/strings-td/boot.toe",
@@ -6422,6 +7601,474 @@
       "member": "DENZA N/strings-web/touchdesigner.html"
     },
     {
+      "path": "DENZA N/strings-z-dance/README.md",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-z-dance\\README.md",
+      "bytes": 4750,
+      "sha256": "f7287fd324c12f67dd523a4987de98aea15b1811dea5277c8d6c12b8783e00cc",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/strings-z-dance/README.md"
+    },
+    {
+      "path": "DENZA N/strings-z-dance/control.html",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-z-dance\\control.html",
+      "bytes": 8469,
+      "sha256": "2eb670faf483fd9e340884fe61ce680a5411e2778b4c18a89145f043d63ae28b",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/strings-z-dance/control.html"
+    },
+    {
+      "path": "DENZA N/strings-z-dance/index.html",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-z-dance\\index.html",
+      "bytes": 33610,
+      "sha256": "65c4baca6c9935ef2aac833d7f1fb95fb9453e77429951a7f097b94f28743fb7",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/strings-z-dance/index.html"
+    },
+    {
+      "path": "DENZA N/strings-z-dance/out/z-dance_floor_stage_30s_4k60.mp4",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-z-dance\\out\\z-dance_floor_stage_30s_4k60.mp4",
+      "bytes": 70219128,
+      "sha256": "b0c4a7198272a62f61a8c84e30effa852f1220f0f066ec72ddb52223534dc8e6",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/z-dance_floor_stage_30s_4k60.mp4",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/z-dance_floor_stage_30s_4k60.mp4"
+    },
+    {
+      "path": "DENZA N/strings-z-dance/out/z-dance_stage3d_split_30s_4k60.mp4",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-z-dance\\out\\z-dance_stage3d_split_30s_4k60.mp4",
+      "bytes": 106652336,
+      "sha256": "c1fdacdc8ab6cd4cb7abdce850754a9c434da40c538469b94b7c6135f0b7f0df",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/z-dance_stage3d_split_30s_4k60.mp4",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/z-dance_stage3d_split_30s_4k60.mp4"
+    },
+    {
+      "path": "DENZA N/strings-z-dance/out/z-dance_wall_combined_30s_4k60.mp4",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-z-dance\\out\\z-dance_wall_combined_30s_4k60.mp4",
+      "bytes": 107324032,
+      "sha256": "4dbcfa3dbaab3c0df0855aebf8d77443c26d115c144f835c37c497399656f7ee",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/z-dance_wall_combined_30s_4k60.mp4",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/z-dance_wall_combined_30s_4k60.mp4"
+    },
+    {
+      "path": "DENZA N/strings-z-dance/server.js",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-z-dance\\server.js",
+      "bytes": 3219,
+      "sha256": "9213ee27463b391b3d18ac18ad798e46b5915598c43743cdf033f878273c42ac",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/strings-z-dance/server.js"
+    },
+    {
+      "path": "DENZA N/strings-z-dance/shots/ch1_split.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-z-dance\\shots\\ch1_split.jpg",
+      "bytes": 183809,
+      "sha256": "c04d530ff3b16f225fe14ee3e0cb074234542645772dfb86cc2111dea4e29aba",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/strings-z-dance/shots/ch1_split.jpg"
+    },
+    {
+      "path": "DENZA N/strings-z-dance/shots/ch2_split.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-z-dance\\shots\\ch2_split.jpg",
+      "bytes": 297612,
+      "sha256": "e179f7afff549ae191a34a90809d6ce6115a85c335ec9ca553a017e83525e7f5",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/strings-z-dance/shots/ch2_split.jpg"
+    },
+    {
+      "path": "DENZA N/strings-z-dance/shots/ch3_split.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-z-dance\\shots\\ch3_split.jpg",
+      "bytes": 249114,
+      "sha256": "f7e88ccbf70f4d6a64d50ab043fa295f7a380c37277991d3a3b57ab51a8e741d",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/strings-z-dance/shots/ch3_split.jpg"
+    },
+    {
+      "path": "DENZA N/strings-z-dance/shots/ch4_split.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-z-dance\\shots\\ch4_split.jpg",
+      "bytes": 375078,
+      "sha256": "cee98c2ebb0ba6e16a3031c45eca2b1729830b014ca446602d036ddb62205c5a",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/strings-z-dance/shots/ch4_split.jpg"
+    },
+    {
+      "path": "DENZA N/strings-z-dance/shots/ch5_split.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-z-dance\\shots\\ch5_split.jpg",
+      "bytes": 301194,
+      "sha256": "287ecb9a8ac05e7a741758b18c7aee94afe5858e1d2df7c30c5558770f94c842",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/strings-z-dance/shots/ch5_split.jpg"
+    },
+    {
+      "path": "DENZA N/strings-z-dance/shots/ch6_split.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-z-dance\\shots\\ch6_split.jpg",
+      "bytes": 274931,
+      "sha256": "f4141a532f0222bfcf4f84b21fae8d6a21c813fc1809812d37ffc5a629dd0e30",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/strings-z-dance/shots/ch6_split.jpg"
+    },
+    {
+      "path": "DENZA N/strings-z-dance/shots/z_dance_contact_sheet.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-z-dance\\shots\\z_dance_contact_sheet.jpg",
+      "bytes": 518634,
+      "sha256": "fe70b926e2d23f592e7b064d6847ab0025e74f57e120a3d3a29a8972f195ae56",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/z_dance_contact_sheet.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/墙地双投方案_1114/z_dance_contact_sheet.jpg"
+    },
+    {
+      "path": "DENZA N/strings-z-dance/start.bat",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-z-dance\\start.bat",
+      "bytes": 79,
+      "sha256": "0b4a9b507e8b411021ab66cdd852e2ab6381594db212a8d0828fb3e2a7b0c9db",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/strings-z-dance/start.bat"
+    },
+    {
+      "path": "DENZA N/strings-z-dance/start.ps1",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\strings-z-dance\\start.ps1",
+      "bytes": 1028,
+      "sha256": "20696d612ce0ae8d9f5c770e5b8e12ed0ba64c0debf7918a0278525774fddf90",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/strings-z-dance/start.ps1"
+    },
+    {
+      "path": "DENZA N/td_assets_wall_floor/columns_fg.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_assets_wall_floor\\columns_fg.obj",
+      "bytes": 1605233,
+      "sha256": "ca52ff0f61a504c0c2a5dec1349691e15ca5f8b57969daebb6f1f4af15a8c4c9",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/columns_fg.obj",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/columns_fg.obj"
+    },
+    {
+      "path": "DENZA N/td_assets_wall_floor/coverage_wall_floor_plan.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_assets_wall_floor\\coverage_wall_floor_plan.png",
+      "bytes": 321327,
+      "sha256": "9662d8754e53de9099204b91de9a8276ca07a0f60027c782a322aad86de00dc9",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/coverage_wall_floor_plan.png",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/coverage_wall_floor_plan.png"
+    },
+    {
+      "path": "DENZA N/td_assets_wall_floor/floor_stage.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_assets_wall_floor\\floor_stage.obj",
+      "bytes": 589854,
+      "sha256": "b7ac210cd581c2388916321d680b08cecfc8cf2ce3c5c01faeb7fb7e278050e6",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_stage.obj",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_stage.obj"
+    },
+    {
+      "path": "DENZA N/td_assets_wall_floor/floor_uv_16x9.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_assets_wall_floor\\floor_uv_16x9.png",
+      "bytes": 314428,
+      "sha256": "6acf60fa1c687671a7bd68709cb192b0053df8255a7be64cc35f811a3f62d2c9",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_uv_16x9.png",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_uv_16x9.png"
+    },
+    {
+      "path": "DENZA N/td_assets_wall_floor/floor_uv_template.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_assets_wall_floor\\floor_uv_template.png",
+      "bytes": 324608,
+      "sha256": "c0adad1b425d961fa861dabbad8328b6b4190a2a8731fa384051f82a7f671e31",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_uv_template.png",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/floor_uv_template.png"
+    },
+    {
+      "path": "DENZA N/td_assets_wall_floor/occluder.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_assets_wall_floor\\occluder.obj",
+      "bytes": 5453318,
+      "sha256": "5b31829abeb5544a7a96c94000b691970481c14ffb8635fc1c838a78085a7459",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/occluder.obj",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/occluder.obj"
+    },
+    {
+      "path": "DENZA N/td_assets_wall_floor/projectors_wall_floor.json",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_assets_wall_floor\\projectors_wall_floor.json",
+      "bytes": 3597,
+      "sha256": "e29f35174b54fbf254cec8e33993523769d95d51745147574f17a128544e3b9e",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/projectors_wall_floor.json",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/projectors_wall_floor.json"
+    },
+    {
+      "path": "DENZA N/td_assets_wall_floor/stage_all_mapping.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_assets_wall_floor\\stage_all_mapping.obj",
+      "bytes": 2796411,
+      "sha256": "5ce1e8132d13528d4357b4867d34dea54e4b98ea31d8e894ad369f816a453fb0",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/stage_all_mapping.obj",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/stage_all_mapping.obj"
+    },
+    {
+      "path": "DENZA N/td_assets_wall_floor/wall_combined.obj",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_assets_wall_floor\\wall_combined.obj",
+      "bytes": 575139,
+      "sha256": "95ff1c049071cbd23f89f90e849cde231a49863fc2f92443811bc38f7313834b",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined.obj",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined.obj"
+    },
+    {
+      "path": "DENZA N/td_assets_wall_floor/wall_combined_uv_16x9.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_assets_wall_floor\\wall_combined_uv_16x9.png",
+      "bytes": 182874,
+      "sha256": "c6554f1c83c1b7d646fb38af1d9780a96b75cc7f9fbdb705d10db7799100256f",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined_uv_16x9.png",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined_uv_16x9.png"
+    },
+    {
+      "path": "DENZA N/td_assets_wall_floor/wall_combined_uv_template.png",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_assets_wall_floor\\wall_combined_uv_template.png",
+      "bytes": 222678,
+      "sha256": "256a09bfb9102dbe963972e2231afc985a57e5a7340a9a2b778082fcaeaee99a",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined_uv_template.png",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_assets_wall_floor/wall_combined_uv_template.png"
+    },
+    {
+      "path": "DENZA N/td_wall_floor_pops/DENZA_Z_WallFloor_Mapping_POPs.1.toe",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_wall_floor_pops\\DENZA_Z_WallFloor_Mapping_POPs.1.toe",
+      "bytes": 241098,
+      "sha256": "678f3523d142bf33fb43276c6280778fbc4482cfdac391cba73eea8658c8406a",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/DENZA_Z_WallFloor_Mapping_POPs.1.toe",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/DENZA_Z_WallFloor_Mapping_POPs.1.toe"
+    },
+    {
+      "path": "DENZA N/td_wall_floor_pops/DENZA_Z_WallFloor_Mapping_POPs.toe",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_wall_floor_pops\\DENZA_Z_WallFloor_Mapping_POPs.toe",
+      "bytes": 241098,
+      "sha256": "678f3523d142bf33fb43276c6280778fbc4482cfdac391cba73eea8658c8406a",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/DENZA_Z_WallFloor_Mapping_POPs.1.toe",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/DENZA_Z_WallFloor_Mapping_POPs.1.toe"
+    },
+    {
+      "path": "DENZA N/td_wall_floor_pops/README.md",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_wall_floor_pops\\README.md",
+      "bytes": 5054,
+      "sha256": "9191dddbabe3ea89a18ce5a44452c9a07d4cd2f63427f4555f06d71c1d0d318c",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/README.md",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/README.md"
+    },
+    {
+      "path": "DENZA N/td_wall_floor_pops/scene1.toe",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_wall_floor_pops\\scene1.toe",
+      "bytes": 241090,
+      "sha256": "157a7b5e13ccfb7cd06b9f642b81ca06f1d6bd8fe81e344b9b1ea5bd625fe550",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/scene1.toe",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/scene1.toe"
+    },
+    {
+      "path": "DENZA N/td_wall_floor_pops/td_build_all.py",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_wall_floor_pops\\td_build_all.py",
+      "bytes": 4187,
+      "sha256": "3dbea6c4e8ccfc420aff8c384bf2b6551010d7399d1e3436291f15550fd8eb5b",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_build_all.py",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_build_all.py"
+    },
+    {
+      "path": "DENZA N/td_wall_floor_pops/td_build_wall_floor_mapping.py",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_wall_floor_pops\\td_build_wall_floor_mapping.py",
+      "bytes": 17197,
+      "sha256": "c7e61a20d0f62b318890f4bad240a56776e44912674d0b29ceee9e22304d6da9",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_build_wall_floor_mapping.py",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_build_wall_floor_mapping.py"
+    },
+    {
+      "path": "DENZA N/td_wall_floor_pops/td_build_z_dance_pops.py",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_wall_floor_pops\\td_build_z_dance_pops.py",
+      "bytes": 15714,
+      "sha256": "4639ea0858a54f3983004b7e652da5f97287b4fbe6eeda5974f99d8155f47020",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_build_z_dance_pops.py",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_build_z_dance_pops.py"
+    },
+    {
+      "path": "DENZA N/td_wall_floor_pops/td_live_previews/td_pops_floor_ch1_axis.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_wall_floor_pops\\td_live_previews\\td_pops_floor_ch1_axis.jpg",
+      "bytes": 411451,
+      "sha256": "3a046f8e7fc3dea5aced9b41c8c69081d470dbaf2a3f1a5fcf08849e6a02a88f",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_floor_ch1_axis.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_floor_ch1_axis.jpg"
+    },
+    {
+      "path": "DENZA N/td_wall_floor_pops/td_live_previews/td_pops_floor_ch3_orange.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_wall_floor_pops\\td_live_previews\\td_pops_floor_ch3_orange.jpg",
+      "bytes": 1791033,
+      "sha256": "617b83674e030b010bfef6d1e22b99b3c0f2d7c3b387b3d307662288d994d590",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_floor_ch3_orange.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_floor_ch3_orange.jpg"
+    },
+    {
+      "path": "DENZA N/td_wall_floor_pops/td_live_previews/td_pops_floor_ch5_zgrid.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_wall_floor_pops\\td_live_previews\\td_pops_floor_ch5_zgrid.jpg",
+      "bytes": 821409,
+      "sha256": "a5ddd0cdfee997be544a23d281dc414ffd6e1a28059acaffa1ad39e4b6e0e583",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_floor_ch5_zgrid.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_floor_ch5_zgrid.jpg"
+    },
+    {
+      "path": "DENZA N/td_wall_floor_pops/td_live_previews/td_pops_wall_ch1_axis.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_wall_floor_pops\\td_live_previews\\td_pops_wall_ch1_axis.jpg",
+      "bytes": 2487246,
+      "sha256": "476365dd61c495998ac4465090749207e96eb9b2576d7f7dbc7c17e220bf76d5",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_wall_ch1_axis.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_wall_ch1_axis.jpg"
+    },
+    {
+      "path": "DENZA N/td_wall_floor_pops/td_live_previews/td_pops_wall_ch3_orange.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_wall_floor_pops\\td_live_previews\\td_pops_wall_ch3_orange.jpg",
+      "bytes": 4073218,
+      "sha256": "17e5d3bce03203536fd16ccd17c56269312a7592680dbf58128aa8d333ac4bac",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_wall_ch3_orange.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_wall_ch3_orange.jpg"
+    },
+    {
+      "path": "DENZA N/td_wall_floor_pops/td_live_previews/td_pops_wall_ch5_zgrid.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_wall_floor_pops\\td_live_previews\\td_pops_wall_ch5_zgrid.jpg",
+      "bytes": 1763396,
+      "sha256": "04a18838dacd8ff9c64f41d66a83113e2df78bc1b360a22226ffdfcd17329af0",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_wall_ch5_zgrid.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_pops_wall_ch5_zgrid.jpg"
+    },
+    {
+      "path": "DENZA N/td_wall_floor_pops/td_live_previews/td_proj1_wall_uv_cal.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_wall_floor_pops\\td_live_previews\\td_proj1_wall_uv_cal.jpg",
+      "bytes": 1113955,
+      "sha256": "611cdda186fcb9cf9817c05340aa2daffaae86e9e30873ea899601701cfc690c",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_proj1_wall_uv_cal.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_proj1_wall_uv_cal.jpg"
+    },
+    {
+      "path": "DENZA N/td_wall_floor_pops/td_live_previews/td_proj2_floor_uv_cal.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_wall_floor_pops\\td_live_previews\\td_proj2_floor_uv_cal.jpg",
+      "bytes": 1210378,
+      "sha256": "b2a04da9baebcfb831c23b71b59a0b8b0380515e70a6dd8b6a8c8b274452a325",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_proj2_floor_uv_cal.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_proj2_floor_uv_cal.jpg"
+    },
+    {
+      "path": "DENZA N/td_wall_floor_pops/td_live_previews/td_sim_3d_ch1_axis.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_wall_floor_pops\\td_live_previews\\td_sim_3d_ch1_axis.jpg",
+      "bytes": 2111838,
+      "sha256": "462057014439ff51c46cbde291d5694eb71ea40dd20f7f1a1058133136bcb217",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch1_axis.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch1_axis.jpg"
+    },
+    {
+      "path": "DENZA N/td_wall_floor_pops/td_live_previews/td_sim_3d_ch3_orange.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_wall_floor_pops\\td_live_previews\\td_sim_3d_ch3_orange.jpg",
+      "bytes": 2602604,
+      "sha256": "b1559896d1a4bf3b918f0ab0828ab2121e2e8cf2abab838c0477b14dcf5873b5",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch3_orange.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch3_orange.jpg"
+    },
+    {
+      "path": "DENZA N/td_wall_floor_pops/td_live_previews/td_sim_3d_ch5_zgrid.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_wall_floor_pops\\td_live_previews\\td_sim_3d_ch5_zgrid.jpg",
+      "bytes": 2341850,
+      "sha256": "7a0a45930daa7b621a9eb2dc7c4987486dfae8adb841347824e8c2e8d48f78ed",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch5_zgrid.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch5_zgrid.jpg"
+    },
+    {
+      "path": "DENZA N/td_wall_floor_pops/td_live_previews/td_sim_3d_uv_cal.jpg",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_wall_floor_pops\\td_live_previews\\td_sim_3d_uv_cal.jpg",
+      "bytes": 2341850,
+      "sha256": "7a0a45930daa7b621a9eb2dc7c4987486dfae8adb841347824e8c2e8d48f78ed",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch5_zgrid.jpg",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/td_live_previews/td_sim_3d_ch5_zgrid.jpg"
+    },
+    {
+      "path": "DENZA N/td_wall_floor_pops/场景1_墙面与地面_Projection.toe",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\td_wall_floor_pops\\场景1_墙面与地面_Projection.toe",
+      "bytes": 241090,
+      "sha256": "157a7b5e13ccfb7cd06b9f642b81ca06f1d6bd8fe81e344b9b1ea5bd625fe550",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/scene1.toe",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/scene1.toe"
+    },
+    {
+      "path": "DENZA N/场景1_墙面与地面_Projection.1.toe",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\场景1_墙面与地面_Projection.1.toe",
+      "bytes": 241122,
+      "sha256": "3b47c94fda63ba128790e65abdc9409dc3c4e4c049c19e83f12406ccea248354",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/场景1_墙面与地面_Projection.1.toe"
+    },
+    {
+      "path": "DENZA N/场景1_墙面与地面_Projection.toe",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\场景1_墙面与地面_Projection.toe",
+      "bytes": 241090,
+      "sha256": "157a7b5e13ccfb7cd06b9f642b81ca06f1d6bd8fe81e344b9b1ea5bd625fe550",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/scene1.toe",
+      "duplicateOf": "DENZA 2/2026-11_DENZA Z/01_场景1_墙面双投影/场景1_墙面与地面_Projection/scene1.toe"
+    },
+    {
+      "path": "DENZA N/幕布参考视频/幕布_1.mp4",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\幕布参考视频\\幕布_1.mp4",
+      "bytes": 2855840,
+      "sha256": "289f25f132ff21d0ecdfe2a8d67da1e41645cc7364cf5f70dffc92acb4f66ee7",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/幕布参考视频/幕布_1.mp4"
+    },
+    {
+      "path": "DENZA N/幕布参考视频/幕布_3.mp4",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\幕布参考视频\\幕布_3.mp4",
+      "bytes": 2030220,
+      "sha256": "a4b08e7284929396eacf22657d406f4c41afcf44d358b165c940af0aef7c9e71",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/幕布参考视频/幕布_3.mp4"
+    },
+    {
+      "path": "DENZA N/幕布参考视频/幕布_5.mp4",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\幕布参考视频\\幕布_5.mp4",
+      "bytes": 3287194,
+      "sha256": "9e01672b22057c08351333daae8f78c112f01a5ca99c6de95b8ba3e4488f738c",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/幕布参考视频/幕布_5.mp4"
+    },
+    {
+      "path": "DENZA N/幕布参考视频/幕布_7.mp4",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\幕布参考视频\\幕布_7.mp4",
+      "bytes": 723933,
+      "sha256": "7e7c121f9ac140274a6472d1b0cd24a0681cc135cbb2c1fbbeaa9a29e9aec335",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/幕布参考视频/幕布_7.mp4"
+    },
+    {
+      "path": "DENZA N/幕布参考视频/幕布_9.mp4",
+      "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\幕布参考视频\\幕布_9.mp4",
+      "bytes": 1307290,
+      "sha256": "a92496013e5ded02e568cb6e9453179ae843dc744c431afe3d9bf72b1db83b78",
+      "archive": "denza-assets-13.zip",
+      "member": "DENZA N/幕布参考视频/幕布_9.mp4"
+    },
+    {
       "path": "DENZA N/腾势空间结构.skp",
       "source": "D:\\Kuanfuweimu\\2-Commission\\VJ Commission\\DENZA N\\腾势空间结构.skp",
       "bytes": 50370754,
@@ -6491,6 +8138,11 @@
       "name": "denza-assets-12.zip",
       "bytes": 327417823,
       "sha256": "f55f643abf011e9176c825f46275fe55a6efe0efbc96188169b349d9caefa233"
+    },
+    {
+      "name": "denza-assets-13.zip",
+      "bytes": 412973402,
+      "sha256": "f6f2dae5d853c7ea0b394ce4bc1ffcd8755bd133b3628ef4d8f53a5ad0c89ec7"
     }
   ],
   "excluded": [
@@ -6547,6 +8199,6 @@
       "reason": "Runtime dependency/cache/session metadata or handoff output; not project source"
     }
   ],
-  "totalLogicalBytes": 5964436403,
-  "archiveBytes": 5353871662
+  "totalLogicalBytes": 6886301860,
+  "archiveBytes": 5766845064
 }
